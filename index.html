@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concatenar SPED</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js" integrity="sha512-r22gChDnGvBylk90+2e/ycr3RVrDi8DIOkIGNhJlKfuyQM4tIRAI062MaV8sfjQKYVGjOBaZBOA87z+IhZE9DA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+    
+        <nav>
+            <ul aria-label="Navegação primária" class="navegacao-primaria">
+                
+                <li id="inicio"><a href="#contato">Contato</a></li>
+               
+            </ul>
+            <i class="fa-solid fa-bars"></i>
+        </nav>
+    </header>
+    <div class="sobre_titulo">
+        <h1>Conversor SPED</h1>
+        <p>Aplicativo WEB para realizar a conversão do TXT do SPED Contribuições (Pis/Cofins) para o formato Excel, 
+            concatenando os registros pais e filhos em uma única linha, facilitando assim a análise das tarefas fiscais.
+        </p>
+        <p>Versão Beta - Apenas EFD Contribuições</p>
+    </div>
+    <section aria-label="seção curriculo dowload Augusto" class="section-div">
+        <div>
+            <h2>Conversor SPED</h2>
+            <h2 class="digitando">Concatene os registros pais e filhos do SPED no Excel!</h2>
+            <p>Baixe o arquivo Excel com os registros pais e filhos concatenados para realizar análises no seu dia a dia.
+            </p>
+        </div>
+        <img src="imagens/SPEDFiscal8.png" alt="imagem ilustrativa SPED">
+        
+        <label for="arquivo" class="custom-file-upload">
+            Selecionar arquivo
+            <input type="file" id="arquivo">
+        </label>
+        <button id="lerArquivo">Gerar Excel</button>
+
+        
+
+    </section>
+    <main>
+
+        <article aria-label="seção sobre mim" class="sobre">
+            <div class="sobre_titulo">
+                <h1 id="contato">Sobre mim</h1>
+                <p>Um pouco sobre mim</p>
+                <div aria-label="Seção apenas de ilustrações de botões">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <img src="imagens/Augusto.jpg" alt="ilustrativa SPED">
+            <div class="sobre_conteudo">
+                <div class="sobre_texto">
+                    <h1>Olá! Eu sou o Augusto</h1>
+                    <p>Consultor SAP e entusiasta em programação WEB e Excel!
+                        <br>
+                        <br>
+                        Por muitos anos trabalhei na área tributária e hoje sou Consultor Funcional SAP SD.
+                    </p>
+                </div>
+                <div class="sobre_info">
+                    <p><i class="fa-solid fa-calendar-days"></i>Data de Nasc: 24 mai 1986</p>
+                    <p><i class="fa-sharp fa-solid fa-laptop-code"></i>Consultor SAP SD</p>
+                    <p><i class="fa-solid fa-location-dot"></i>Endereço: Montenegro-RS, Brasil</p>
+                    <p><i class="fa-solid fa-flag"></i>Nacionalidade: Brasileiro</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>Phone: +51 99630-3258</p>
+                    <p><i class="fa-solid fa-envelope"></i>Email: augusto.caetano86@gmail.com</p>
+                </div>
+            </div>
+        </article>
+    </main>
+    
+    <a id="link-topo" href="#inicio">&#9650;</a>
+
+    <footer>
+        <nav aria-label="navegação de links sociais">
+            <ul class="footer_sociais">
+                <a href="https://www.facebook.com/augustocaetanomaria" target="_blank" rel="noopener noreferrer"><li><i class="fa-brands fa-facebook-f"></i></li></a>            
+                <a href="https://www.linkedin.com/in/augusto-caetano/" target="_blank" rel="noopener noreferrer"><li><i class="fa-brands fa-linkedin-in"></i></li></a>
+                <a href="https://www.instagram.com/augusto_caetano/" target="_blank" rel="noopener noreferrer"><li><i class="fa-brands fa-instagram"></i></li></a>
+            </ul>
+        </nav>
+        <p class="footer_comercial">Todos os direitos reservados &copy; Conversor SPED - 2023</p>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/estilo.js"></script>
+</body>
+</html>
