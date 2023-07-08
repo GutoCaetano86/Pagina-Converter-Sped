@@ -940,20 +940,83 @@ document.getElementById('lerArquivo').addEventListener('click', function () {
     var headersR0001 = ['Item Pai','Seq','REG','IND_MOV'];
     R0001.unshift(headersR0001);
 
-    var headersR0140 = ['Item Pai', 'Seq', 'REG'];
+    var headersR0035 = ['Item Pai','Seq','REG','COD_SCP', 'DESC_SCP', 'INF_COMP'];
+    R0035.unshift(headersR0035);
+
+    var headersR0100 = ['Item Pai', 'Seq', 'REG', 'NOME', 'CPF', 'CRC', 'CNPJ', 'CEP', 'END', 'NUM', 'COMPL', 'BAIRRO', 'FONE', 'FAX', 'EMAIL', 'COD_MUN'];
+    R0100.unshift(headersR0100);
+
+    var headersR0110 = ['Item Pai', 'Seq', 'REG', 'COD_INC_TRIB', 'IND_APRO_CRED', 'COD_TIPO_CONT', 'IND_REG_CUM'];
+    R0110.unshift(headersR0110);
+
+    var headersR0111 = ['Item Pai', 'Seq', 'REG', 'REC_BRU_NCUM_TRIB_MI', 'REC_BRU_NCUM_NT_MI', 'REC_BRU_ NCUM_EXP', 'REC_BRU_CUM', 'REC_BRU_TOTAL'];
+    R0111.unshift(headersR0111);
+
+    var headersR0120 = ['Item Pai', 'Seq', 'REG', 'REC_BRU_NCUM_TRIB_MI', 'MES_REFER', 'INF_COMP'];
+    R0120.unshift(headersR0120);
+
+    var headersR0140 = ['Item Pai', 'Seq', 'REG', 'COD_EST', 'NOME', 'CNPJ', 'UF', 'IE', 'COD_MUN', 'IM', 'SUFRAMA'];
     R0140.unshift(headersR0140);
 
-    var headersR0150 = ['Cod Estab', 'Item Pai', 'Seq', 'REG'];
+    var headersR0145 = ['Item Pai', 'Seq', 'REG', 'COD_INC_TRIB', 'VL_REC_TOT', 'VL_REC_ATIV', 'VL_REC_DEMAIS_ATIV', 'INFO_COMPL'];
+    R0145.unshift(headersR0145);
+
+    var headersR0150 = ['COD ESTAB', 'Item Pai', 'Seq', 'REG', 'COD_PART', 'NOME', 'COD_PAIS', 'CNPJ', 'CPF', 'IE', 'COD_MUN', 'SUFRAMA', 'END', 'NUM', 'COMPL', 'BAIRRO'];
     R0150.unshift(headersR0150);
 
-    var headersRC010 = ['Item Pai', 'Seq', 'REG', 'CNPJ', 'IND_ESCRI'];
-    RC010.unshift(headersRC010);
+    var headersR0175 = ['Item Pai', 'COD_PART', 'Seq', 'REG', 'DT_ALT', 'NR_CAMPO', 'CONT_ANT'];
+    R0175.unshift(headersR0175);
 
-    var headersRC100 = ['CNPJ', 'Item', 'Item Pai', 'REG', 'IND_OP'];
-    RC100.unshift(headersRC100);
+    var headersR0190 = ['Item Pai', 'Seq', 'REG', 'UNID', 'DESCR'];
+    R0190.unshift(headersR0190);
 
-    var headersRC170 = ['CNPJ', 'Item Pai', 'Num Doc', 'COD_PARTIC', 'Seq', 'REG', 'Num_Item', 'Cod_Item'];
-    RC170.unshift(headersRC170);
+    var headersR0200 = ['COD ESTAB', 'Item Pai', 'Seq', 'REG', 'COD_ITEM', 'DESCR_ITEM', 'COD_BARRA', 'COD_ANT_ITEM', 'UNID_INV', 'TIPO_ITEM', 'COD_NCM', 'EX_IPI', 'COD_GEN', 'COD_LST', 'ALIQ_ICMS'];
+    R0200.unshift(headersR0200);
+
+    var headersR0205 = ['Item Pai', 'COD_ITEM', 'Seq', 'REG', 'DESCR_ANT_ITEM', 'DT_INI', 'DT_FIM', 'COD_ANT_ITEM'];
+    R0205.unshift(headersR0205);
+
+    var headersR0206 = ['Item Pai', 'COD_ITEM', 'Seq', 'REG', 'COD_COMB'];
+    R0206.unshift(headersR0206);
+
+    var headersR0208 = ['Item Pai', 'COD_ITEM', 'Seq', 'REG', 'COD_TAB', 'COD_GRU', 'MARCA_COM'];
+    R0208.unshift(headersR0208);
+
+    var headersR0210 = ['Item Pai', 'COD_ITEM', 'Seq', 'REG', 'COD_ITEM_COMP', 'QTD_COMP', 'PERDA'];
+    R0210.unshift(headersR0210);
+
+    var headersR0220 = ['Item Pai', 'COD_ITEM', 'Seq', 'REG', 'UNID_CONV', 'FAT_CONV', 'COD_BARRA'];
+    R0220.unshift(headersR0220);
+
+    var headersR0300 = ['Item Pai', 'Seq', 'REG', 'COD_IND_BEM', 'IDENT_MERC', 'DESCR_ITEM', 'COD_PRNC', 'COD_CTA', 'NR_PARC'];
+    R0300.unshift(headersR0300);
+
+    var headersR0305 = ['Item Pai', 'COD_IND_BEM', 'Seq', 'REG', 'COD_CCUS', 'FUNC', 'VIDA_UTIL'];
+    R0305.unshift(headersR0305);
+
+    var headersR0400 = ['Item Pai', 'Seq', 'REG', 'COD_NAT', 'DESCR_NAT'];
+    R0400.unshift(headersR0400);
+
+    var headersR0450 = ['Item Pai', 'Seq', 'REG', 'COD_INF', 'TXT'];
+    R0450.unshift(headersR0450);
+
+    var headersR0460 = ['Item Pai', 'Seq', 'REG', 'COD_OBS', 'TXT'];
+    R0460.unshift(headersR0460);
+
+    var headersR0500 = ['Item Pai', 'Seq', 'REG', 'DT_ALT', 'COD_ NAT_CC', 'IND_CTA', 'NÍVEL', 'COD_CTA', 'NOME_CTA', 'COD_CTA_REF', 'CNPJ_EST'];
+    R0500.unshift(headersR0500);
+
+    var headersR0600 = ['Item Pai', 'Seq', 'REG', 'DT_ALT', 'COD_CCUS', 'CCUS'];
+    R0600.unshift(headersR0600);
+
+    var headersR0900 = ['Item Pai', 'Seq', 'REG', 'REC_TOTAL_BLOCO_A', 'REC_NRB_BLOCO_A', 'REC_TOTAL_BLOCO_C', 'REC_NRB_BLOCO_C', 'REC_TOTAL_BLOCO_D', 'REC_NRB_BLOCO_D', 'REC_TOTAL_BLOCO_F', 'REC_NRB_BLOCO_F', 'REC_TOTAL_BLOCO_I', 'REC_NRB_BLOCO_I', 'REC_TOTAL_BLOCO_1', 'REC_NRB_BLOCO_1', 'REC_TOTAL_PERIODO', 'REC_TOTAL_NRB_PERÍODO'];
+    R0900.unshift(headersR0900);
+
+    var headersR0990 = ['Item Pai', 'Seq', 'REG', 'QTD_LIN_0'];
+    R0990.unshift(headersR0990);
+
+
+    
 
     //Salvar nas sheets
     var worksheetR0000 = XLSX.utils.aoa_to_sheet(R0000);
