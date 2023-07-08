@@ -1015,305 +1015,305 @@ document.getElementById('lerArquivo').addEventListener('click', function () {
     var headersR0990 = ['Item Pai', 'Seq', 'REG', 'QTD_LIN_0'];
     R0990.unshift(headersR0990);
 
-    var headersA001 = ['Item Pai', 'Seq', 'REG', 'IND_MOV']
-    A001.unshift(headersA001);
+    var headersRA001 = ['Item Pai', 'Seq', 'REG', 'IND_MOV']
+    RA001.unshift(headersRA001);
 
-    var headersA010 = ['Item Pai', 'Seq', 'REG', 'CNPJ']
-    A010.unshift(headersA010);
+    var headersRA010 = ['Item Pai', 'Seq', 'REG', 'CNPJ']
+    RA010.unshift(headersRA010);
 
-    var headersA100 = ['CNPJ', 'Item', 'Item Pai', 'Reg', 'IND_OPER', 'IND_EMIT', 'COD_PART', 'COD_SIT', 'SER', 'SUB SER', 'NUM_DOC', 'CHV_NFSE', 'DT_DOC', 'DT_EXE_SERV', 'VL_DOC', 'IND_PGTO', 'VL_DESC', 'VL_BC_PIS', 'VL_PIS', 'VL_BC_COFINS', 'VL_COFINS', 'VL_PIS_RET', 'VL_COFINS_RET', 'VL_ISS']
-    A100.unshift(headersA100);
+    var headersRA100 = ['CNPJ', 'Item', 'Item Pai', 'Reg', 'IND_OPER', 'IND_EMIT', 'COD_PART', 'COD_SIT', 'SER', 'SUB SER', 'NUM_DOC', 'CHV_NFSE', 'DT_DOC', 'DT_EXE_SERV', 'VL_DOC', 'IND_PGTO', 'VL_DESC', 'VL_BC_PIS', 'VL_PIS', 'VL_BC_COFINS', 'VL_COFINS', 'VL_PIS_RET', 'VL_COFINS_RET', 'VL_ISS']
+    RA100.unshift(headersRA100);
 
-    var headersA110 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'REG', 'COD_INF', 'TXT_COMPL']
-    A110.unshift(headersA110);
+    var headersRA110 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'REG', 'COD_INF', 'TXT_COMPL']
+    RA110.unshift(headersRA110);
 
-    var headersA111 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'REG', 'NUM_PROC', 'IND_PROC']
-    A111.unshift(headersA111);
+    var headersRA111 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'REG', 'NUM_PROC', 'IND_PROC']
+    RA111.unshift(headersRA111);
 
-    var headersA120 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'REG', 'VL_TOT_SERV', 'VL_BC_PIS', 'VL_PIS_IMP', 'DT_PAG_PIS', 'VL_BC_COFINS', 'VL_COFINS_IMP', 'DT_PAG_COFINS', 'LOC_EXE_SERV']
-    A120.unshift(headersA120);
+    var headersRA120 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'REG', 'VL_TOT_SERV', 'VL_BC_PIS', 'VL_PIS_IMP', 'DT_PAG_PIS', 'VL_BC_COFINS', 'VL_COFINS_IMP', 'DT_PAG_COFINS', 'LOC_EXE_SERV']
+    RA120.unshift(headersRA120);
 
-    var headersA170 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'REG', 'NUM_ITEM', 'COD_ITEM', 'DESCR_COMPL', 'VL_ITEM', 'VL_DESC', 'NAT_BC_CRED', 'IND_ORIG_CRED', 'CST_PIS', 'VL_BC_PIS', 'ALIQ_PIS', 'VL_PIS', 'CST_COFINS', 'VL_BC_COFINS', 'ALIQ_COFINS', 'VL_COFINS', 'COD_CTA', 'COD_CCUS']
-    A170.unshift(headersA170);
+    var headersRA170 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'REG', 'NUM_ITEM', 'COD_ITEM', 'DESCR_COMPL', 'VL_ITEM', 'VL_DESC', 'NAT_BC_CRED', 'IND_ORIG_CRED', 'CST_PIS', 'VL_BC_PIS', 'ALIQ_PIS', 'VL_PIS', 'CST_COFINS', 'VL_BC_COFINS', 'ALIQ_COFINS', 'VL_COFINS', 'COD_CTA', 'COD_CCUS']
+    RA170.unshift(headersRA170);
 
-    var headersA990 = ['Item Pai', 'Seq', 'REG', 'QTD_LIN_0']
-    A990.unshift(headersA990);
+    var headersRA990 = ['Item Pai', 'Seq', 'REG', 'QTD_LIN_0']
+    RA990.unshift(headersRA990);
 
-    var headersC001 = ['Item Pai', 'Seq', 'REG', 'IND_MOV']
-    C001.unshift(headersC001);
+    var headersRC001 = ['Item Pai', 'Seq', 'REG', 'IND_MOV']
+    RC001.unshift(headersRC001);
 
-    var headersC010 = ['Item Pai', 'Seq', 'REG', 'CNPJ', 'IND_ESCRI']
-    C010.unshift(headersC010);
+    var headersRC010 = ['Item Pai', 'Seq', 'REG', 'CNPJ', 'IND_ESCRI']
+    RC010.unshift(headersRC010);
 
-    var headersC100 = ['CNPJ', 'Item', 'Item Pai', 'Reg', 'IND_OPER', 'IND_EMIT', 'COD_PART', 'COD_MOD', 'COD_SIT', 'SER', 'NUM_DOC', 'CHV_NFE', 'DT_DOC', 'DT_E_S', 'VL_DOC', 'IND_PGTO', 'VL_DESC', 'VL_ABAT_NT', 'VL_MERC', 'IND_FRT', 'VL_FRT', 'VL_SEG', 'VL_OUT_DA', 'VL_BC_ICMS', 'VL_ICMS', 'VL_BC_ICMS_ST', 'VL_ICMS_ST', 'VL_IPI', 'VL_PIS', 'VL_COFINS', 'VL_PIS_ST', 'VL_COFINS_ST']
-    C100.unshift(headersC100);
+    var headersRC100 = ['CNPJ', 'Item', 'Item Pai', 'Reg', 'IND_OPER', 'IND_EMIT', 'COD_PART', 'COD_MOD', 'COD_SIT', 'SER', 'NUM_DOC', 'CHV_NFE', 'DT_DOC', 'DT_E_S', 'VL_DOC', 'IND_PGTO', 'VL_DESC', 'VL_ABAT_NT', 'VL_MERC', 'IND_FRT', 'VL_FRT', 'VL_SEG', 'VL_OUT_DA', 'VL_BC_ICMS', 'VL_ICMS', 'VL_BC_ICMS_ST', 'VL_ICMS_ST', 'VL_IPI', 'VL_PIS', 'VL_COFINS', 'VL_PIS_ST', 'VL_COFINS_ST']
+    RC100.unshift(headersRC100);
 
-    var headersC110 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'REG', 'COD_INF', 'TXT_COMPL']
-    C110.unshift(headersC110);
+    var headersRC110 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'REG', 'COD_INF', 'TXT_COMPL']
+    RC110.unshift(headersRC110);
 
-    var headersC111 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'REG', 'NUM_PROC', 'IND_PROC']
-    C111.unshift(headersC111);
+    var headersRC111 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'REG', 'NUM_PROC', 'IND_PROC']
+    RC111.unshift(headersRC111);
 
-    var headersC120 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'REG', 'COD_DOC_IMP', 'NUM_DOC_IMP', 'VL_PIS_IMP', 'VL_COFINS_IMP', 'NUM_ACDRAW']
-    C120.unshift(headersC120);
+    var headersRC120 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'REG', 'COD_DOC_IMP', 'NUM_DOC_IMP', 'VL_PIS_IMP', 'VL_COFINS_IMP', 'NUM_ACDRAW']
+    RC120.unshift(headersRC120);
 
-    var headersC170 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'REG', 'NUM_ITEM', 'COD_ITEM', 'DESCR_COMPL', 'QTD', 'UNID', 'VL_ITEM', 'VL_DESC', 'IND_MOV', 'CST_ICMS', 'CFOP', 'COD_NAT', 'VL_BC_ICMS', 'ALIQ_ICMS', 'VL_ICMS', 'VL_BC_ICMS_ST', 'ALIQ_ST', 'VL_ICMS_ST', 'IND_APUR', 'CST_IPI', 'COD_ENQ', 'VL_BC_IPI', 'ALIQ_IPI', 'VL_IPI', 'CST_PIS', 'VL_BC_PIS', 'ALIQ_PIS', 'QUANT_BC_PIS', 'ALIQ_PIS_QUANT', 'VL_PIS', 'CST_COFINS', 'VL_BC_COFINS', 'ALIQ_COFINS', 'QUANT_BC_COFINS', 'ALIQ_COFINS_QUANT', 'VL_COFINS', 'COD_CTA']
-    C170.unshift(headersC170);
+    var headersRC170 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'REG', 'NUM_ITEM', 'COD_ITEM', 'DESCR_COMPL', 'QTD', 'UNID', 'VL_ITEM', 'VL_DESC', 'IND_MOV', 'CST_ICMS', 'CFOP', 'COD_NAT', 'VL_BC_ICMS', 'ALIQ_ICMS', 'VL_ICMS', 'VL_BC_ICMS_ST', 'ALIQ_ST', 'VL_ICMS_ST', 'IND_APUR', 'CST_IPI', 'COD_ENQ', 'VL_BC_IPI', 'ALIQ_IPI', 'VL_IPI', 'CST_PIS', 'VL_BC_PIS', 'ALIQ_PIS', 'QUANT_BC_PIS', 'ALIQ_PIS_QUANT', 'VL_PIS', 'CST_COFINS', 'VL_BC_COFINS', 'ALIQ_COFINS', 'QUANT_BC_COFINS', 'ALIQ_COFINS_QUANT', 'VL_COFINS', 'COD_CTA']
+    RC170.unshift(headersRC170);
     
-    var headersC175 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'REG', 'CFOP', 'VL_OPR', 'VL_DESC', 'CST_PIS', 'VL_BC_PIS', 'ALIQ_PIS', 'QUANT_BC_PIS', 'ALIQ_PIS_QUANT', 'VL_PIS', 'CST_COFINS', 'VL_BC_COFINS', 'ALIQ_COFINS', 'QUANT_BC_COFINS', 'ALIQ_COFINS_QUANT', 'VL_COFINS', 'COD_CTA', 'INFO_COMPL']
-    C175.unshift(headersC175);
+    var headersRC175 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'REG', 'CFOP', 'VL_OPR', 'VL_DESC', 'CST_PIS', 'VL_BC_PIS', 'ALIQ_PIS', 'QUANT_BC_PIS', 'ALIQ_PIS_QUANT', 'VL_PIS', 'CST_COFINS', 'VL_BC_COFINS', 'ALIQ_COFINS', 'QUANT_BC_COFINS', 'ALIQ_COFINS_QUANT', 'VL_COFINS', 'COD_CTA', 'INFO_COMPL']
+    RC175.unshift(headersRC175);
 
-    var headersC180 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'COD_MOD', 'DT_DOC_INI', 'DT_DOC_FIN', 'COD_ITEM', 'COD_NCM', 'EX_IPI', 'VL_TOT_ITEM']
-    C180.unshift(headersC180);
+    var headersRC180 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'COD_MOD', 'DT_DOC_INI', 'DT_DOC_FIN', 'COD_ITEM', 'COD_NCM', 'EX_IPI', 'VL_TOT_ITEM']
+    RC180.unshift(headersRC180);
 
-    var headersC181 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'CST_PIS', 'CFOP', 'VL_ITEM', 'VL_DESC', 'VL_BC_PIS', 'ALIQ_PIS', 'QUANT_BC_PIS', 'ALIQ_PIS_QUANT', 'VL_PIS', 'COD_CTA']
-    C181.unshift(headersC181);
+    var headersRC181 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'CST_PIS', 'CFOP', 'VL_ITEM', 'VL_DESC', 'VL_BC_PIS', 'ALIQ_PIS', 'QUANT_BC_PIS', 'ALIQ_PIS_QUANT', 'VL_PIS', 'COD_CTA']
+    RC181.unshift(headersRC181);
 
-    var headersC185 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'CST_COFINS', 'CFOP', 'VL_ITEM', 'VL_DESC', 'VL_BC_COFINS', 'ALIQ_COFINS', 'QUANT_BC_COFINS', 'ALIQ_COFINS_QUANT', 'VL_COFINS', 'COD_CTA']
-    C185.unshift(headersC185);
+    var headersRC185 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'CST_COFINS', 'CFOP', 'VL_ITEM', 'VL_DESC', 'VL_BC_COFINS', 'ALIQ_COFINS', 'QUANT_BC_COFINS', 'ALIQ_COFINS_QUANT', 'VL_COFINS', 'COD_CTA']
+    RC185.unshift(headersRC185);
 
-    var headersC188 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'NUM_PROC', 'IND_PROC']
-    C188.unshift(headersC188);
+    var headersRC188 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'NUM_PROC', 'IND_PROC']
+    RC188.unshift(headersRC188);
     
-    var headersC191 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'CNPJ_CPF_PART', 'CST_PIS', 'CFOP', 'VL_ITEM', 'VL_DESC', 'VL_BC_PIS', 'ALIQ_PIS', 'QUANT_BC_PIS', 'ALIQ_PIS_QUANT', 'VL_PIS', 'COD_CTA']
-    C191.unshift(headersC191);
+    var headersRC191 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'CNPJ_CPF_PART', 'CST_PIS', 'CFOP', 'VL_ITEM', 'VL_DESC', 'VL_BC_PIS', 'ALIQ_PIS', 'QUANT_BC_PIS', 'ALIQ_PIS_QUANT', 'VL_PIS', 'COD_CTA']
+    RC191.unshift(headersRC191);
 
-    var headersC195 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'CNPJ_CPF_PART', 'CST_COFINS', 'CFOP', 'VL_ITEM', 'VL_DESC', 'VL_BC_COFINS', 'ALIQ_COFINS', 'QUANT_BC_COFINS', 'ALIQ_COFINS_QUANT', 'VL_COFINS', 'COD_CTA']
-    C195.unshift(headersC195);
+    var headersRC195 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'CNPJ_CPF_PART', 'CST_COFINS', 'CFOP', 'VL_ITEM', 'VL_DESC', 'VL_BC_COFINS', 'ALIQ_COFINS', 'QUANT_BC_COFINS', 'ALIQ_COFINS_QUANT', 'VL_COFINS', 'COD_CTA']
+    RC195.unshift(headersRC195);
 
-    var headersC198 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'NUM_PROC', 'IND_PROC']
-    C198.unshift(headersC198);
+    var headersRC198 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'NUM_PROC', 'IND_PROC']
+    RC198.unshift(headersRC198);
 
-    var headersC199 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'COD_DOC_IMP', 'NUM_DOC__IMP', 'VL_PIS_IMP', 'VL_COFINS_IMP', 'NUM_ACDRAW']
-    C199.unshift(headersC199);
+    var headersRC199 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'COD_DOC_IMP', 'NUM_DOC__IMP', 'VL_PIS_IMP', 'VL_COFINS_IMP', 'NUM_ACDRAW']
+    RC199.unshift(headersRC199);
 
-    var headersC380 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'COD_MOD', 'DT_DOC_INI', 'DT_DOC_FIN', 'NUM_DOC_INI', 'NUM_DOC_FIN', 'VL_DOC', 'VL_DOC_CANC']
-    C380.unshift(headersC380);
+    var headersRC380 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'COD_MOD', 'DT_DOC_INI', 'DT_DOC_FIN', 'NUM_DOC_INI', 'NUM_DOC_FIN', 'VL_DOC', 'VL_DOC_CANC']
+    RC380.unshift(headersRC380);
 
-    var headersC381 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'COD_MOD', 'DT_DOC_INI', 'CST_PIS', 'COD_ITEM', 'VL_ITEM', 'VL_BC_PIS', 'ALIQ_PIS', 'QUANT_BC_PIS', 'ALIQ_PIS_QUANT', 'VL_PIS', 'COD_CTA']
-    C381.unshift(headersC381);
+    var headersRC381 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'COD_MOD', 'DT_DOC_INI', 'CST_PIS', 'COD_ITEM', 'VL_ITEM', 'VL_BC_PIS', 'ALIQ_PIS', 'QUANT_BC_PIS', 'ALIQ_PIS_QUANT', 'VL_PIS', 'COD_CTA']
+    RC381.unshift(headersRC381);
 
-    var headersC385 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'CST_COFINS', 'COD_ITEM', 'VL_ITEM', 'VL_BC_COFINS', 'ALIQ_COFINS', 'QUANT_BC_COFINS', 'ALIQ_COFINS_QUANT', 'VL_COFINS', 'COD_CTA']
-    C385.unshift(headersC385);
+    var headersRC385 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'CST_COFINS', 'COD_ITEM', 'VL_ITEM', 'VL_BC_COFINS', 'ALIQ_COFINS', 'QUANT_BC_COFINS', 'ALIQ_COFINS_QUANT', 'VL_COFINS', 'COD_CTA']
+    RC385.unshift(headersC385);
 
-    var headersC395 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'CST_COFINS', 'COD_MOD', 'COD_PART', 'SER', 'SUB_SER', 'NUM_DOC', 'DT_DOC', 'VL_DOC']
-    C395.unshift(headersC395);
+    var headersRC395 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'CST_COFINS', 'COD_MOD', 'COD_PART', 'SER', 'SUB_SER', 'NUM_DOC', 'DT_DOC', 'VL_DOC']
+    RC395.unshift(headersRC395);
 
-    var headersC396 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'REG', 'COD_ITEM', 'VL_ITEM', 'VL_DESC', 'NAT_BC_CRED', 'CST_PIS', 'VL_BC_PIS', 'ALIQ_PIS', 'VL_PIS', 'CST_COFINS', 'VL_BC_COFINS', 'ALIQ_COFINS', 'VL_COFINS', 'COD_CTA']
-    C396.unshift(headersC396);
+    var headersRC396 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'REG', 'COD_ITEM', 'VL_ITEM', 'VL_DESC', 'NAT_BC_CRED', 'CST_PIS', 'VL_BC_PIS', 'ALIQ_PIS', 'VL_PIS', 'CST_COFINS', 'VL_BC_COFINS', 'ALIQ_COFINS', 'VL_COFINS', 'COD_CTA']
+    RC396.unshift(headersRC396);
 
-    var headersC500 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'COD_PART', 'COD_MOD', 'COD_SIT', 'SER', 'SUB', 'NUM_DOC', 'DT_DOC', 'DT_ENT', 'VL_DOC', 'VL_ICMS', 'COD_INF', 'VL_PIS', 'VL_COFINS', 'CHV_DOCe']
-    C500.unshift(headersC500);
+    var headersRC500 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'COD_PART', 'COD_MOD', 'COD_SIT', 'SER', 'SUB', 'NUM_DOC', 'DT_DOC', 'DT_ENT', 'VL_DOC', 'VL_ICMS', 'COD_INF', 'VL_PIS', 'VL_COFINS', 'CHV_DOCe']
+    RC500.unshift(headersRC500);
 
-    var headersC501 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'REG', 'CST_PIS', 'VL_ITEM', 'NAT_BC_CRED', 'VL_BC_PIS', 'ALIQ_PIS', 'VL_PIS', 'COD_CTA']
-    C501.unshift(headersC501);
+    var headersRC501 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'REG', 'CST_PIS', 'VL_ITEM', 'NAT_BC_CRED', 'VL_BC_PIS', 'ALIQ_PIS', 'VL_PIS', 'COD_CTA']
+    RC501.unshift(headersRC501);
 
-    var headersC505 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'REG', 'CST_COFINS', 'VL_ITEM', 'NAT_BC_CRED', 'VL_BC_COFINS', 'ALIQ_COFINS', 'VL_COFINS', 'COD_CTA']
-    C505.unshift(headersC505);
+    var headersRC505 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'REG', 'CST_COFINS', 'VL_ITEM', 'NAT_BC_CRED', 'VL_BC_COFINS', 'ALIQ_COFINS', 'VL_COFINS', 'COD_CTA']
+    RC505.unshift(headersRC505);
 
-    var headersC509 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'REG', 'NUM_PROC', 'IND_PROC']
-    C509.unshift(headersC509);
+    var headersRC509 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'REG', 'NUM_PROC', 'IND_PROC']
+    RC509.unshift(headersRC509);
 
-    var headersC600 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'COD_MOD', 'COD_MUN', 'SER', 'SUB', 'COD_CONS', 'QTD_CONS', 'QTD_CANC', 'DT_DOC', 'VL_DOC', 'VL_DESC', 'CONS', 'VL_FORN', 'VL_SERV_NT', 'VL_TERC', 'VL_DA', 'VL_BC_ICMS', 'VL_ICMS', 'VL_BC_ICMS_ST', 'VL_ICMS_ST', 'VL_PIS', 'VL_COFINS']
-    C600.unshift(headersC600);
+    var headersRC600 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'COD_MOD', 'COD_MUN', 'SER', 'SUB', 'COD_CONS', 'QTD_CONS', 'QTD_CANC', 'DT_DOC', 'VL_DOC', 'VL_DESC', 'CONS', 'VL_FORN', 'VL_SERV_NT', 'VL_TERC', 'VL_DA', 'VL_BC_ICMS', 'VL_ICMS', 'VL_BC_ICMS_ST', 'VL_ICMS_ST', 'VL_PIS', 'VL_COFINS']
+    RC600.unshift(headersRC600);
 
-    var headersC601 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'REG', 'CST_PIS', 'VL_ITEM', 'VL_BC_PIS', 'ALIQ_PIS', 'VL_PIS', 'COD_CTA']
-    C601.unshift(headersC601);
+    var headersRC601 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'REG', 'CST_PIS', 'VL_ITEM', 'VL_BC_PIS', 'ALIQ_PIS', 'VL_PIS', 'COD_CTA']
+    RC601.unshift(headersRC601);
 
-    var headersC605 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'REG', 'CST_COFINS', 'VL_ITEM', 'VL_BC_COFINS', 'ALIQ_COFINS', 'VL_COFINS', 'COD_CTA']
-    C605.unshift(headersC605);
+    var headersRC605 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'REG', 'CST_COFINS', 'VL_ITEM', 'VL_BC_COFINS', 'ALIQ_COFINS', 'VL_COFINS', 'COD_CTA']
+    RC605.unshift(headersRC605);
 
-    var headersC609 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'REG', 'NUM_PROC', 'IND_PROC']
-    C609.unshift(headersC609);
+    var headersRC609 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'REG', 'NUM_PROC', 'IND_PROC']
+    RC609.unshift(headersRC609);
 
-    var headersC990 = ['Item Pai', 'Seq', 'REG', 'QTD_LIN_0']
-    C990.unshift(headersC990);
+    var headersRC990 = ['Item Pai', 'Seq', 'REG', 'QTD_LIN_0']
+    RC990.unshift(headersRC990);
 
-    var headersD001 = ['Item Pai', 'Seq', 'REG', 'IND_MOV']
-    D001.unshift(headersD001);
+    var headersRD001 = ['Item Pai', 'Seq', 'REG', 'IND_MOV']
+    RD001.unshift(headersRD001);
 
-    var headersD010 = ['Item Pai', 'Seq', 'REG', 'CNPJ']
-    D010.unshift(headersD010);
+    var headersRD010 = ['Item Pai', 'Seq', 'REG', 'CNPJ']
+    RD010.unshift(headersRD010);
 
-    var headersD100 = ['CNPJ', 'Item', 'Item Pai', 'Reg', 'IND_OPER', 'IND_EMIT', 'COD_PART', 'COD_MOD', 'COD_SIT', 'SER', 'SUB', 'NUM_DOC', 'CHV_CTE', 'DT_DOC', 'DT_A_P', 'TP_CT-e', 'CHV_CTE_REF', 'VL_DOC', 'VL_DESC', 'IND_FRT', 'VL_SERV', 'VL_BC_ICMS', 'VL_ICMS', 'VL_NT', 'COD_INF', 'COD_CTA']
-    D100.unshift(headersD100);
+    var headersRD100 = ['CNPJ', 'Item', 'Item Pai', 'Reg', 'IND_OPER', 'IND_EMIT', 'COD_PART', 'COD_MOD', 'COD_SIT', 'SER', 'SUB', 'NUM_DOC', 'CHV_CTE', 'DT_DOC', 'DT_A_P', 'TP_CT-e', 'CHV_CTE_REF', 'VL_DOC', 'VL_DESC', 'IND_FRT', 'VL_SERV', 'VL_BC_ICMS', 'VL_ICMS', 'VL_NT', 'COD_INF', 'COD_CTA']
+    RD100.unshift(headersRD100);
 
-    var headersD101 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'Reg', 'IND_NAT_FRT', 'VL_ITEM', 'CST_PIS', 'NAT_BC_CRED', 'VL_BC_PIS', 'ALIQ_PIS', 'VL_PIS', 'COD_CTA']
-    D101.unshift(headersD101);
+    var headersRD101 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'Reg', 'IND_NAT_FRT', 'VL_ITEM', 'CST_PIS', 'NAT_BC_CRED', 'VL_BC_PIS', 'ALIQ_PIS', 'VL_PIS', 'COD_CTA']
+    RD101.unshift(headersRD101);
 
-    var headersD105 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'Reg', 'IND_NAT_FRT', 'VL_ITEM', 'CST_COFINS', 'NAT_BC_CRED', 'VL_BC_COFINS', 'ALIQ_COFINS', 'VL_COFINS', 'COD_CTA']
-    D105.unshift(headersD105);
+    var headersRD105 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'Reg', 'IND_NAT_FRT', 'VL_ITEM', 'CST_COFINS', 'NAT_BC_CRED', 'VL_BC_COFINS', 'ALIQ_COFINS', 'VL_COFINS', 'COD_CTA']
+    RD105.unshift(headersD105);
 
-    var headersD111 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'Reg', 'NUM_PROC', 'IND_PROC']
-    D111.unshift(headersD111);
+    var headersRD111 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'Reg', 'NUM_PROC', 'IND_PROC']
+    RD111.unshift(headersRD111);
 
-    var headersD200 = ['CNPJ', 'Item', 'Item Pai', 'Reg', 'COD_MOD', 'COD_SIT', 'SER', 'SUB', 'NUM_DOC_INI', 'NUM_DOC_FIN', 'CFOP', 'DT_REF', 'VL_DOC', 'VL_DESC']
-    D200.unshift(headersD200);
+    var headersRD200 = ['CNPJ', 'Item', 'Item Pai', 'Reg', 'COD_MOD', 'COD_SIT', 'SER', 'SUB', 'NUM_DOC_INI', 'NUM_DOC_FIN', 'CFOP', 'DT_REF', 'VL_DOC', 'VL_DESC']
+    RD200.unshift(headersRD200);
 
-    var headersD201 = ['CNPJ', 'item Pai', 'Seq', 'Reg', 'CST_PIS', 'VL_ITEM', 'VL_BC_PIS', 'ALIQ_PIS', 'VL_PIS', 'COD_CTA']
-    D201.unshift(headersD201);
+    var headersRD201 = ['CNPJ', 'item Pai', 'Seq', 'Reg', 'CST_PIS', 'VL_ITEM', 'VL_BC_PIS', 'ALIQ_PIS', 'VL_PIS', 'COD_CTA']
+    RD201.unshift(headersRD201);
 
-    var headersD205 = ['CNPJ', 'item Pai', 'Seq', 'Reg', 'CST_COFINS', 'VL_ITEM', 'VL_BC_COFINS', 'ALIQ_COFINS', 'VL_COFINS', 'COD_CTA']
-    D205.unshift(headersD205);
+    var headersRD205 = ['CNPJ', 'item Pai', 'Seq', 'Reg', 'CST_COFINS', 'VL_ITEM', 'VL_BC_COFINS', 'ALIQ_COFINS', 'VL_COFINS', 'COD_CTA']
+    RD205.unshift(headersRD205);
 
-    var headersD209 = ['CNPJ', 'item Pai', 'Seq', 'Reg', 'NUM_PROC', 'IND_PROC']
-    D209.unshift(headersD209);
+    var headersRD209 = ['CNPJ', 'item Pai', 'Seq', 'Reg', 'NUM_PROC', 'IND_PROC']
+    RD209.unshift(headersRD209);
 
-    var headersD500 = ['CNPJ', 'Item', 'Item Pai', 'Reg', 'IND_OPER', 'IND_EMIT', 'COD_PART', 'COD_MOD', 'COD_SIT', 'SER', 'SUB', 'NUM_DOC', 'DT_DOC', 'DT_A_P', 'VL_DOC', 'VL_DESC', 'VL_SERV', 'VL_SERV_NT', 'VL_TERC', 'VL_DA', 'VL_BC_ICMS', 'VL_ICMS', 'COD_INF', 'VL_PIS', 'VL_COFINS']
-    D500.unshift(headersD500);
+    var headersRD500 = ['CNPJ', 'Item', 'Item Pai', 'Reg', 'IND_OPER', 'IND_EMIT', 'COD_PART', 'COD_MOD', 'COD_SIT', 'SER', 'SUB', 'NUM_DOC', 'DT_DOC', 'DT_A_P', 'VL_DOC', 'VL_DESC', 'VL_SERV', 'VL_SERV_NT', 'VL_TERC', 'VL_DA', 'VL_BC_ICMS', 'VL_ICMS', 'COD_INF', 'VL_PIS', 'VL_COFINS']
+    RD500.unshift(headersRD500);
 
-    var headersD501 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'Reg', 'CST_PIS', 'VL_ITEM', 'NAT_BC_CRED', 'VL_BC_PIS', 'ALIQ_PIS', 'VL_PIS', 'COD_CTA']
-    D501.unshift(headersD501);
+    var headersRD501 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'Reg', 'CST_PIS', 'VL_ITEM', 'NAT_BC_CRED', 'VL_BC_PIS', 'ALIQ_PIS', 'VL_PIS', 'COD_CTA']
+    RD501.unshift(headersRD501);
 
-    var headersD505 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'Reg', 'CST_COFINS', 'VL_ITEM', 'NAT_BC_CRED', 'VL_BC_COFINS', 'ALIQ_COFINS', 'VL_COFINS', 'COD_CTA']
-    D505.unshift(headersD505);
+    var headersRD505 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'Reg', 'CST_COFINS', 'VL_ITEM', 'NAT_BC_CRED', 'VL_BC_COFINS', 'ALIQ_COFINS', 'VL_COFINS', 'COD_CTA']
+    RD505.unshift(headersRD505);
 
-    var headersD509 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'Reg', 'NUM_PROC', 'IND_PROC']
-    D509.unshift(headersD509);
+    var headersRD509 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'Reg', 'NUM_PROC', 'IND_PROC']
+    RD509.unshift(headersRD509);
 
-    var headersD600 = ['CNPJ', 'Item', 'Item Pai', 'Reg', 'COD_MOD', 'COD_MUN', 'SER', 'SUB', 'IND_REC', 'QTD_CONS', 'DT_DOC_INI', 'DT_DOC_FIN', 'VL_DOC', 'VL_DESC', 'VL_SERV', 'VL_SERV_NT', 'VL_TERC', 'VL_DA', 'VL_BC_ICMS', 'VL_ICMS', 'VL_PIS', 'VL_COFINS']
-    D600.unshift(headersD600);
+    var headersRD600 = ['CNPJ', 'Item', 'Item Pai', 'Reg', 'COD_MOD', 'COD_MUN', 'SER', 'SUB', 'IND_REC', 'QTD_CONS', 'DT_DOC_INI', 'DT_DOC_FIN', 'VL_DOC', 'VL_DESC', 'VL_SERV', 'VL_SERV_NT', 'VL_TERC', 'VL_DA', 'VL_BC_ICMS', 'VL_ICMS', 'VL_PIS', 'VL_COFINS']
+    RD600.unshift(headersRD600);
 
-    var headersD601 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'COD_CLASS', 'VL_ITEM', 'VL_DESC', 'CST_PIS', 'VL_BC_PIS', 'ALIQ_PIS', 'VL_PIS', 'COD_CTA']
-    D601.unshift(headersD601);
+    var headersRD601 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'COD_CLASS', 'VL_ITEM', 'VL_DESC', 'CST_PIS', 'VL_BC_PIS', 'ALIQ_PIS', 'VL_PIS', 'COD_CTA']
+    RD601.unshift(headersRD601);
 
-    var headersD605 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'COD_CLASS', 'VL_ITEM', 'VL_DESC', 'CST_COFINS', 'VL_BC_COFINS', 'ALIQ_COFINS', 'VL_COFINS', 'COD_CTA']
-    D605.unshift(headersD605);
+    var headersRD605 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'COD_CLASS', 'VL_ITEM', 'VL_DESC', 'CST_COFINS', 'VL_BC_COFINS', 'ALIQ_COFINS', 'VL_COFINS', 'COD_CTA']
+    RD605.unshift(headersRD605);
 
-    var headersD609 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'NUM_PROC', 'IND_PROC']
-    D609.unshift(headersD609);
+    var headersRD609 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'NUM_PROC', 'IND_PROC']
+    RD609.unshift(headersRD609);
 
-    var headersD990 = ['Item Pai', 'Seq', 'REG', 'QTD_LIN_0']
-    D990.unshift(headersD990);
+    var headersRD990 = ['Item Pai', 'Seq', 'REG', 'QTD_LIN_0']
+    RD990.unshift(headersRD990);
 
-    var headersF001 = ['Item Pai', 'Seq', 'REG', 'IND_MOV']
-    F001.unshift(headersF001);
+    var headersRF001 = ['Item Pai', 'Seq', 'REG', 'IND_MOV']
+    RF001.unshift(headersRF001);
 
-    var headersF010 = ['Item Pai', 'Seq', 'REG', 'CNPJ']
-    F010.unshift(headersF010);
+    var headersRF010 = ['Item Pai', 'Seq', 'REG', 'CNPJ']
+    RF010.unshift(headersF010);
 
-    var headersF100 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'IND_OPER', 'COD_PART', 'COD_ITEM', 'DT_OPER', 'VL_OPER', 'CST_PIS', 'VL_BC_PIS', 'ALIQ_PIS', 'VL_PIS', 'CST_COFINS', 'VL_BC_COFINS', 'ALIQ_COFINS', 'VL_COFINS', 'NAT_BC_CRED', 'IND_ORIG_CRED', 'COD_CTA', 'COD_CCUS', 'DESC_DOC_OPER']
-    F100.unshift(headersF100);
+    var headersRF100 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'IND_OPER', 'COD_PART', 'COD_ITEM', 'DT_OPER', 'VL_OPER', 'CST_PIS', 'VL_BC_PIS', 'ALIQ_PIS', 'VL_PIS', 'CST_COFINS', 'VL_BC_COFINS', 'ALIQ_COFINS', 'VL_COFINS', 'NAT_BC_CRED', 'IND_ORIG_CRED', 'COD_CTA', 'COD_CCUS', 'DESC_DOC_OPER']
+    RF100.unshift(headersRF100);
 
-    var headersF111 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'NUM_PROC', 'IND_PROC']
-    F111.unshift(headersF111);
+    var headersRF111 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'NUM_PROC', 'IND_PROC']
+    RF111.unshift(headersRF111);
 
-    var headersF120 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'NAT_BC_CRED', 'IDENT_BEM_IMOB', 'IND_ORIG_CRED', 'IND_UTIL_BEM_IMOB', 'VL_OPER_DEP', 'PARC_OPER_NAO_BC_CRED', 'CST_PIS', 'VL_BC_PIS', 'ALIQ_PIS', 'VL_PIS', 'CST_COFINS', 'VL_BC_COFINS', 'ALIQ_COFINS', 'VL_COFINS', 'COD_CTA', 'COD_CCUS', 'DESC_ BEM_IMOB']
-    F120.unshift(headersF120);
+    var headersRF120 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'NAT_BC_CRED', 'IDENT_BEM_IMOB', 'IND_ORIG_CRED', 'IND_UTIL_BEM_IMOB', 'VL_OPER_DEP', 'PARC_OPER_NAO_BC_CRED', 'CST_PIS', 'VL_BC_PIS', 'ALIQ_PIS', 'VL_PIS', 'CST_COFINS', 'VL_BC_COFINS', 'ALIQ_COFINS', 'VL_COFINS', 'COD_CTA', 'COD_CCUS', 'DESC_ BEM_IMOB']
+    RF120.unshift(headersRF120);
 
-    var headersF129 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'NUM_PROC', 'IND_PROC']
-    F129.unshift(headersF129);
+    var headersRF129 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'NUM_PROC', 'IND_PROC']
+    RF129.unshift(headersRF129);
 
-    var headersF130 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'NAT_BC_CRED', 'IDENT_BEM_IMOB', 'IND_ORIG_CRED', 'IND_UTIL_BEM_IMOB', 'MES_OPER_AQUIS', 'VL_OPER_DEP', 'PARC_OPER_NAO_BC_CRED', 'VL_BC_CRED', 'IND_NR_PARC', 'CST_PIS', 'VL_BC_PIS', 'ALIQ_PIS', 'VL_PIS', 'CST_COFINS', 'VL_BC_COFINS', 'ALIQ_COFINS', 'VL_COFINS', 'COD_CTA', 'COD_CCUS', 'DESC_ BEM_IMOB']
-    F130.unshift(headersF130);
+    var headersRF130 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'NAT_BC_CRED', 'IDENT_BEM_IMOB', 'IND_ORIG_CRED', 'IND_UTIL_BEM_IMOB', 'MES_OPER_AQUIS', 'VL_OPER_DEP', 'PARC_OPER_NAO_BC_CRED', 'VL_BC_CRED', 'IND_NR_PARC', 'CST_PIS', 'VL_BC_PIS', 'ALIQ_PIS', 'VL_PIS', 'CST_COFINS', 'VL_BC_COFINS', 'ALIQ_COFINS', 'VL_COFINS', 'COD_CTA', 'COD_CCUS', 'DESC_ BEM_IMOB']
+    RF130.unshift(headersRF130);
 
-    var headersF139 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'NUM_PROC', 'IND_PROC']
-    F139.unshift(headersF139);
+    var headersRF139 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'NUM_PROC', 'IND_PROC']
+    RF139.unshift(headersRF139);
 
-    var headersF150 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'NAT_BC_CRED', 'VL_TOT_EST', 'EST_IMP', 'VL_BC_EST', 'VL_BC_MEN_EST', 'CST_PIS', 'ALIQ_PIS', 'VL_CRED_PIS', 'CST_COFINS', 'ALIQ_COFINS', 'VL_CRED_COFINS', 'DESC_EST', 'COD_CTA']
-    F150.unshift(headersF150);
+    var headersRF150 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'NAT_BC_CRED', 'VL_TOT_EST', 'EST_IMP', 'VL_BC_EST', 'VL_BC_MEN_EST', 'CST_PIS', 'ALIQ_PIS', 'VL_CRED_PIS', 'CST_COFINS', 'ALIQ_COFINS', 'VL_CRED_COFINS', 'DESC_EST', 'COD_CTA']
+    RF150.unshift(headersRF150);
 
-    var headersF990 = ['Item Pai', 'Seq', 'REG', 'QTD_LIN_0']
-    F990.unshift(headersF990);
+    var headersRF990 = ['Item Pai', 'Seq', 'REG', 'QTD_LIN_0']
+    RF990.unshift(headersRF990);
 
-    var headersM001 = ['Item Pai', 'Seq', 'REG', 'IND_MOV']
-    M001.unshift(headersM001);
+    var headersRM001 = ['Item Pai', 'Seq', 'REG', 'IND_MOV']
+    RM001.unshift(headersRM001);
 
-    var headersM100 = ['Item Pai', 'Seq', 'REG', 'COD_CRED', 'IND_CRED_ORI', 'VL_BC_PIS', 'ALIQ_PIS', 'QUANT_BC_PIS', 'ALIQ_PIS_QUANT', 'VL_CRED', 'VL_AJUS_ACRES', 'VL_AJUS_REDUC', 'VL_CRED_DIF', 'VL_CRED_DISP', 'IND_DESC_CRED', 'VL_CRED_DESC', 'SLD_CRED']
-    M100.unshift(headersM100);
+    var headersRM100 = ['Item Pai', 'Seq', 'REG', 'COD_CRED', 'IND_CRED_ORI', 'VL_BC_PIS', 'ALIQ_PIS', 'QUANT_BC_PIS', 'ALIQ_PIS_QUANT', 'VL_CRED', 'VL_AJUS_ACRES', 'VL_AJUS_REDUC', 'VL_CRED_DIF', 'VL_CRED_DISP', 'IND_DESC_CRED', 'VL_CRED_DESC', 'SLD_CRED']
+    RM100.unshift(headersRM100);
 
-    var headersM105 = ['COD_CRED', 'ALIQ_PIS', 'Item Pai', 'Seq', 'REG', 'NAT_BC_CRED', 'CST_PIS', 'VL_BC_PIS_TOT', 'VL_BC_PIS_CUM', 'VL_BC_PIS_NC', 'VL_BC_PIS', 'QUANT_BC_PIS_TOT', 'QUANT_BC_PIS', 'DESC_CRED']
-    M105.unshift(headersM105);
+    var headersRM105 = ['COD_CRED', 'ALIQ_PIS', 'Item Pai', 'Seq', 'REG', 'NAT_BC_CRED', 'CST_PIS', 'VL_BC_PIS_TOT', 'VL_BC_PIS_CUM', 'VL_BC_PIS_NC', 'VL_BC_PIS', 'QUANT_BC_PIS_TOT', 'QUANT_BC_PIS', 'DESC_CRED']
+    RM105.unshift(headersRM105);
 
-    var headersM110 = ['COD_CRED', 'ALIQ_PIS', 'Item Pai', 'Seq', 'REG', 'IND_AJ', 'VL_AJ', 'COD_AJ', 'NUM_DOC', 'DESCR_AJ', 'DT_REF']
-    M110.unshift(headersM110);
+    var headersRM110 = ['COD_CRED', 'ALIQ_PIS', 'Item Pai', 'Seq', 'REG', 'IND_AJ', 'VL_AJ', 'COD_AJ', 'NUM_DOC', 'DESCR_AJ', 'DT_REF']
+    RM110.unshift(headersRM110);
 
-    var headersM115 = ['COD_CRED', 'ALIQ_PIS', 'Item Pai', 'COD_AJ', 'Seq', 'REG', 'DET_VALOR_AJ', 'CST_PIS', 'DET_BC_CRED', 'DET_ALIQ', 'DT_OPER_AJ', 'DESC_AJ', 'COD_CTA', 'INFO_COMPL']
-    M115.unshift(headersM115);
+    var headersRM115 = ['COD_CRED', 'ALIQ_PIS', 'Item Pai', 'COD_AJ', 'Seq', 'REG', 'DET_VALOR_AJ', 'CST_PIS', 'DET_BC_CRED', 'DET_ALIQ', 'DT_OPER_AJ', 'DESC_AJ', 'COD_CTA', 'INFO_COMPL']
+    RM115.unshift(headersRM115);
 
-    var headersM200 = ['Item Pai', 'Seq', 'REG', 'VL_TOT_CONT_NC_PER', 'VL_TOT_CRED_DESC', 'VL_TOT_CRED_DESC_ANT', 'VL_TOT_CONT_NC_DEV', 'VL_RET_NC', 'VL_OUT_DED_NC', 'VL_CONT_NC_REC', 'VL_TOT_CONT_CUM_PER', 'VL_RET_CUM', 'VL_OUT_DED_CUM', 'VL_CONT_CUM_REC', 'VL_TOT_CONT_REC']
-    M200.unshift(headersM200);
+    var headersRM200 = ['Item Pai', 'Seq', 'REG', 'VL_TOT_CONT_NC_PER', 'VL_TOT_CRED_DESC', 'VL_TOT_CRED_DESC_ANT', 'VL_TOT_CONT_NC_DEV', 'VL_RET_NC', 'VL_OUT_DED_NC', 'VL_CONT_NC_REC', 'VL_TOT_CONT_CUM_PER', 'VL_RET_CUM', 'VL_OUT_DED_CUM', 'VL_CONT_CUM_REC', 'VL_TOT_CONT_REC']
+    RM200.unshift(headersRM200);
 
-    var headersM205 = ['Item Pai', 'Seq', 'REG', 'NUM_CAMPO', 'COD_REC', 'VL_DEBITO']
-    M205.unshift(headersM205);
+    var headersRM205 = ['Item Pai', 'Seq', 'REG', 'NUM_CAMPO', 'COD_REC', 'VL_DEBITO']
+    RM205.unshift(headersRM205);
 
-    var headersM210 = ['Item Pai', 'Seq', 'REG', 'COD_CONT', 'VL_REC_BRT', 'VL_BC_CONT', 'VL_AJUS_ACRES_BC_PIS', 'VL_AJUS_REDUC_BC_PIS', 'VL_BC_CONT_AJUS', 'ALIQ_PIS_QUANT', 'QUANT_BC_PIS', 'ALIQ_PIS_QUANT', 'VL_CONT_APUR', 'VL_AJUS_ACRES', 'VL_AJUS_REDUC', 'VL_CONT_DIFER', 'VL_CONT_DIFER_ANT', 'VL_CONT_PER']
-    M210.unshift(headersM210);
+    var headersRM210 = ['Item Pai', 'Seq', 'REG', 'COD_CONT', 'VL_REC_BRT', 'VL_BC_CONT', 'VL_AJUS_ACRES_BC_PIS', 'VL_AJUS_REDUC_BC_PIS', 'VL_BC_CONT_AJUS', 'ALIQ_PIS_QUANT', 'QUANT_BC_PIS', 'ALIQ_PIS_QUANT', 'VL_CONT_APUR', 'VL_AJUS_ACRES', 'VL_AJUS_REDUC', 'VL_CONT_DIFER', 'VL_CONT_DIFER_ANT', 'VL_CONT_PER']
+    RM210.unshift(headersRM210);
 
-    var headersM211 = ['Item Pai', 'Seq', 'REG', 'IND_TIP_COOP', 'VL_BC_CONT_ANT_EXC_COOP', 'VL_EXC_COOP_GER', 'VL_EXC_ESP_COOP', 'VL_BC_CONT']
-    M211.unshift(headersM211);
+    var headersRM211 = ['Item Pai', 'Seq', 'REG', 'IND_TIP_COOP', 'VL_BC_CONT_ANT_EXC_COOP', 'VL_EXC_COOP_GER', 'VL_EXC_ESP_COOP', 'VL_BC_CONT']
+    RM211.unshift(headersRM211);
 
-    var headersM215 = ['Item Pai', 'Seq', 'REG', 'IND_AJ_BC', 'VL_AJ_BC', 'COD_AJ_BC', 'NUM_DOC', 'DESCR_AJ_BC', 'DT_REF', 'COD_CTA', 'CNPJ', 'INFO_COMPL']
-    M215.unshift(headersM215);
+    var headersRM215 = ['Item Pai', 'Seq', 'REG', 'IND_AJ_BC', 'VL_AJ_BC', 'COD_AJ_BC', 'NUM_DOC', 'DESCR_AJ_BC', 'DT_REF', 'COD_CTA', 'CNPJ', 'INFO_COMPL']
+    RM215.unshift(headersRM215);
 
-    var headersM220 = ['Item Pai', 'Seq', 'REG', 'IND_AJ_BC', 'VL_AJ', 'COD_AJ', 'NUM_DOC', 'DESCR_AJ', 'DT_REF']
-    M220.unshift(headersM220);
+    var headersRM220 = ['Item Pai', 'Seq', 'REG', 'IND_AJ_BC', 'VL_AJ', 'COD_AJ', 'NUM_DOC', 'DESCR_AJ', 'DT_REF']
+    RM220.unshift(headersRM220);
 
-    var headersM225 = ['COD_AJ', 'Item Pai', 'Seq', 'REG', 'DET_VALOR_AJ', 'CST_PIS', 'DET_BC_CRED', 'DET_ALIQ', 'DT_OPER_AJ', 'DESC_AJ', 'COD_CTA', 'INFO_COMPL']
-    M225.unshift(headersM225);
+    var headersRM225 = ['COD_AJ', 'Item Pai', 'Seq', 'REG', 'DET_VALOR_AJ', 'CST_PIS', 'DET_BC_CRED', 'DET_ALIQ', 'DT_OPER_AJ', 'DESC_AJ', 'COD_CTA', 'INFO_COMPL']
+    RM225.unshift(headersRM225);
 
-    var headersM230 = ['Item Pai', 'Seq', 'REG', 'CNPJ', 'VL_VEND', 'VL_NAO_RECEB', 'VL_CONT_DIF', 'VL_CRED_DIF', 'COD_CRED']
-    M230.unshift(headersM230);
+    var headersRM230 = ['Item Pai', 'Seq', 'REG', 'CNPJ', 'VL_VEND', 'VL_NAO_RECEB', 'VL_CONT_DIF', 'VL_CRED_DIF', 'COD_CRED']
+    RM230.unshift(headersRM230);
 
-    var headersM300 = ['Item Pai', 'Seq', 'REG', 'COD_CONT', 'VL_CONT_APUR_DIFER', 'NAT_CRED_DESC', 'VL_CRED_DESC_DIFER', 'VL_CONT_DIFER_ANT', 'PER_APUR', 'DT_RECEB']
-    M300.unshift(headersM300);
+    var headersRM300 = ['Item Pai', 'Seq', 'REG', 'COD_CONT', 'VL_CONT_APUR_DIFER', 'NAT_CRED_DESC', 'VL_CRED_DESC_DIFER', 'VL_CONT_DIFER_ANT', 'PER_APUR', 'DT_RECEB']
+    RM300.unshift(headersRM300);
 
-    var headersM350 = ['Item Pai', 'Seq', 'REG', 'VL_TOT_FOL', 'VL_EXC_BC', 'VL_TOT_BC', 'ALIQ_PIS_FOL', 'VL_TOT_CONT_FOL']
-    M350.unshift(headersM350);
+    var headersRM350 = ['Item Pai', 'Seq', 'REG', 'VL_TOT_FOL', 'VL_EXC_BC', 'VL_TOT_BC', 'ALIQ_PIS_FOL', 'VL_TOT_CONT_FOL']
+    RM350.unshift(headersRM350);
 
-    var headersM400 = ['Item Pai', 'Seq', 'REG', 'CST_PIS', 'VL_TOT_REC', 'COD_CTA', 'DESC_COMPL']
-    M400.unshift(headersM400);
+    var headersRM400 = ['Item Pai', 'Seq', 'REG', 'CST_PIS', 'VL_TOT_REC', 'COD_CTA', 'DESC_COMPL']
+    RM400.unshift(headersM400);
 
-    var headersM410 = ['Item Pai', 'Seq', 'REG', 'NAT_REC', 'VL_REC', 'COD_CTA', 'DESC_COMPL']
-    M410.unshift(headersM410);
+    var headersRM410 = ['Item Pai', 'Seq', 'REG', 'NAT_REC', 'VL_REC', 'COD_CTA', 'DESC_COMPL']
+    RM410.unshift(headersRM410);
 
-    var headersM500 = ['Item Pai', 'Seq', 'REG', 'COD_CRED', 'IND_CRED_ORI', 'VL_BC_COFINS', 'ALIQ_COFINS', 'QUANT_BC_COFINS', 'ALIQ_COFINS_QUANT', 'VL_CRED', 'VL_AJUS_ACRES', 'VL_AJUS_REDUC', 'VL_CRED_DIF', 'VL_CRED_DISP', 'IND_DESC_CRED', 'VL_CRED_DESC', 'SLD_CRED']
-    M500.unshift(headersM500);
+    var headersRM500 = ['Item Pai', 'Seq', 'REG', 'COD_CRED', 'IND_CRED_ORI', 'VL_BC_COFINS', 'ALIQ_COFINS', 'QUANT_BC_COFINS', 'ALIQ_COFINS_QUANT', 'VL_CRED', 'VL_AJUS_ACRES', 'VL_AJUS_REDUC', 'VL_CRED_DIF', 'VL_CRED_DISP', 'IND_DESC_CRED', 'VL_CRED_DESC', 'SLD_CRED']
+    RM500.unshift(headersRM500);
 
-    var headersM505 = ['COD_CRED', 'ALIQ_COFINS', 'Item Pai', 'Seq', 'REG', 'NAT_BC_CRED', 'CST_COFINS', 'VL_BC_COFINS_TOT', 'VL_BC_COFINS_CUM', 'VL_BC_COFINS_NC', 'VL_BC_COFINS', 'QUANT_BC_COFINS_TOT', 'QUANT_BC_COFINS', 'DESC_CRED']
-    M505.unshift(headersM505);
+    var headersRM505 = ['COD_CRED', 'ALIQ_COFINS', 'Item Pai', 'Seq', 'REG', 'NAT_BC_CRED', 'CST_COFINS', 'VL_BC_COFINS_TOT', 'VL_BC_COFINS_CUM', 'VL_BC_COFINS_NC', 'VL_BC_COFINS', 'QUANT_BC_COFINS_TOT', 'QUANT_BC_COFINS', 'DESC_CRED']
+    RM505.unshift(headersRM505);
 
-    var headersM510 = ['COD_CRED', 'ALIQ_COFINS', 'Item Pai', 'Seq', 'REG', 'IND_AJ', 'VL_AJ', 'COD_AJ', 'NUM_DOC', 'DESCR_AJ', 'DT_REF']
-    M510.unshift(headersM510);
+    var headersRM510 = ['COD_CRED', 'ALIQ_COFINS', 'Item Pai', 'Seq', 'REG', 'IND_AJ', 'VL_AJ', 'COD_AJ', 'NUM_DOC', 'DESCR_AJ', 'DT_REF']
+    RM510.unshift(headersRM510);
 
-    var headersM515 = ['COD_CRED', 'ALIQ_COFINS', 'Item Pai', 'COD_AJ', 'Seq', 'REG', 'DET_VALOR_AJ', 'CST_COFINS', 'DET_BC_CRED', 'DET_ALIQ', 'DT_OPER_AJ', 'DESC_AJ', 'COD_CTA', 'INFO_COMPL']
-    M515.unshift(headersM515);
+    var headersRM515 = ['COD_CRED', 'ALIQ_COFINS', 'Item Pai', 'COD_AJ', 'Seq', 'REG', 'DET_VALOR_AJ', 'CST_COFINS', 'DET_BC_CRED', 'DET_ALIQ', 'DT_OPER_AJ', 'DESC_AJ', 'COD_CTA', 'INFO_COMPL']
+    RM515.unshift(headersRM515);
 
-    var headersM600 = ['Item Pai', 'Seq', 'REG', 'VL_TOT_CONT_NC_PER', 'VL_TOT_CRED_DESC', 'VL_TOT_CRED_DESC_ANT', 'VL_TOT_CONT_NC_DEV', 'VL_RET_NC', 'VL_OUT_DED_NC', 'VL_CONT_NC_REC', 'VL_TOT_CONT_CUM_PER', 'VL_RET_CUM', 'VL_OUT_DED_CUM', 'VL_CONT_CUM_REC', 'VL_TOT_CONT_REC']
-    M600.unshift(headersM600);
+    var headersRM600 = ['Item Pai', 'Seq', 'REG', 'VL_TOT_CONT_NC_PER', 'VL_TOT_CRED_DESC', 'VL_TOT_CRED_DESC_ANT', 'VL_TOT_CONT_NC_DEV', 'VL_RET_NC', 'VL_OUT_DED_NC', 'VL_CONT_NC_REC', 'VL_TOT_CONT_CUM_PER', 'VL_RET_CUM', 'VL_OUT_DED_CUM', 'VL_CONT_CUM_REC', 'VL_TOT_CONT_REC']
+    RM600.unshift(headersRM600);
 
-    var headersM605 = ['Item Pai', 'Seq', 'REG', 'NUM_CAMPO', 'COD_REC', 'VL_DEBITO']
-    M605.unshift(headersM605);
+    var headersRM605 = ['Item Pai', 'Seq', 'REG', 'NUM_CAMPO', 'COD_REC', 'VL_DEBITO']
+    RM605.unshift(headersRM605);
 
-    var headersM610 = ['Item Pai', 'Seq', 'REG', 'COD_CONT', 'VL_REC_BRT', 'VL_BC_CONT', 'VL_AJUS_ACRES_BC_COFINS', 'VL_AJUS_REDUC_BC_COFINS', 'VL_BC_CONT_AJUS', 'ALIQ_COFINS_QUANT', 'QUANT_BC_COFINS', 'ALIQ_COFINS_QUANT', 'VL_CONT_APUR', 'VL_AJUS_ACRES', 'VL_AJUS_REDUC', 'VL_CONT_DIFER', 'VL_CONT_DIFER_ANT', 'VL_CONT_PER']
-    M610.unshift(headersM610);
+    var headersRM610 = ['Item Pai', 'Seq', 'REG', 'COD_CONT', 'VL_REC_BRT', 'VL_BC_CONT', 'VL_AJUS_ACRES_BC_COFINS', 'VL_AJUS_REDUC_BC_COFINS', 'VL_BC_CONT_AJUS', 'ALIQ_COFINS_QUANT', 'QUANT_BC_COFINS', 'ALIQ_COFINS_QUANT', 'VL_CONT_APUR', 'VL_AJUS_ACRES', 'VL_AJUS_REDUC', 'VL_CONT_DIFER', 'VL_CONT_DIFER_ANT', 'VL_CONT_PER']
+    RM610.unshift(headersM610);
 
-    var headersM611 = ['Item Pai', 'Seq', 'REG', 'IND_TIP_COOP', 'VL_BC_CONT_ANT_EXC_COOP', 'VL_EXC_COOP_GER', 'VL_EXC_ESP_COOP', 'VL_BC_CONT']
-    M611.unshift(headersM611);
+    var headersRM611 = ['Item Pai', 'Seq', 'REG', 'IND_TIP_COOP', 'VL_BC_CONT_ANT_EXC_COOP', 'VL_EXC_COOP_GER', 'VL_EXC_ESP_COOP', 'VL_BC_CONT']
+    RM611.unshift(headersRM611);
 
-    var headersM615 = ['Item Pai', 'Seq', 'REG', 'IND_AJ_BC', 'VL_AJ_BC', 'COD_AJ_BC', 'NUM_DOC', 'DESCR_AJ_BC', 'DT_REF', 'COD_CTA', 'CNPJ', 'INFO_COMPL']
-    M615.unshift(headersM615);
+    var headersRM615 = ['Item Pai', 'Seq', 'REG', 'IND_AJ_BC', 'VL_AJ_BC', 'COD_AJ_BC', 'NUM_DOC', 'DESCR_AJ_BC', 'DT_REF', 'COD_CTA', 'CNPJ', 'INFO_COMPL']
+    RM615.unshift(headersRM615);
 
-    var headersM620 = ['Item Pai', 'Seq', 'REG', 'IND_AJ_BC', 'VL_AJ', 'COD_AJ', 'NUM_DOC', 'DESCR_AJ', 'DT_REF']
-    M620.unshift(headersM620);
+    var headersRM620 = ['Item Pai', 'Seq', 'REG', 'IND_AJ_BC', 'VL_AJ', 'COD_AJ', 'NUM_DOC', 'DESCR_AJ', 'DT_REF']
+    RM620.unshift(headersRM620);
 
-    var headersM625 = ['COD_AJ', 'Item Pai', 'Seq', 'REG', 'DET_VALOR_AJ', 'CST_COFINS', 'DET_BC_CRED', 'DET_ALIQ', 'DT_OPER_AJ', 'DESC_AJ', 'COD_CTA', 'INFO_COMPL']
-    M625.unshift(headersM625);
+    var headersRM625 = ['COD_AJ', 'Item Pai', 'Seq', 'REG', 'DET_VALOR_AJ', 'CST_COFINS', 'DET_BC_CRED', 'DET_ALIQ', 'DT_OPER_AJ', 'DESC_AJ', 'COD_CTA', 'INFO_COMPL']
+    RM625.unshift(headersRM625);
 
-    var headersM630 = ['Item Pai', 'Seq', 'REG', 'CNPJ', 'VL_VEND', 'VL_NAO_RECEB', 'VL_CONT_DIF', 'VL_CRED_DIF', 'COD_CRED']
-    M630.unshift(headersM630);
+    var headersRM630 = ['Item Pai', 'Seq', 'REG', 'CNPJ', 'VL_VEND', 'VL_NAO_RECEB', 'VL_CONT_DIF', 'VL_CRED_DIF', 'COD_CRED']
+    RM630.unshift(headersRM630);
 
-    var headersM700 = ['Item Pai', 'Seq', 'REG', 'COD_CONT', 'VL_CONT_APUR_DIFER', 'NAT_CRED_DESC', 'VL_CRED_DESC_DIFER', 'VL_CONT_DIFER_ANT', 'PER_APUR', 'DT_RECEB']
-    M700.unshift(headersM700);
+    var headersRM700 = ['Item Pai', 'Seq', 'REG', 'COD_CONT', 'VL_CONT_APUR_DIFER', 'NAT_CRED_DESC', 'VL_CRED_DESC_DIFER', 'VL_CONT_DIFER_ANT', 'PER_APUR', 'DT_RECEB']
+    RM700.unshift(headersRM700);
 
-    var headersM800 = ['Item Pai', 'Seq', 'REG', 'CST_COFINS', 'VL_TOT_REC', 'COD_CTA', 'DESC_COMPL']
-    M800.unshift(headersM800);
+    var headersRM800 = ['Item Pai', 'Seq', 'REG', 'CST_COFINS', 'VL_TOT_REC', 'COD_CTA', 'DESC_COMPL']
+    RM800.unshift(headersRM800);
 
-    var headersM810 = ['Item Pai', 'Seq', 'REG', 'NAT_REC', 'VL_REC', 'COD_CTA', 'DESC_COMPL']
-    M810.unshift(headersM810);
+    var headersRM810 = ['Item Pai', 'Seq', 'REG', 'NAT_REC', 'VL_REC', 'COD_CTA', 'DESC_COMPL']
+    RM810.unshift(headersRM810);
 
-    var headersM990 = ['Item Pai', 'Seq', 'REG', 'QTD_LIN_0']
-    M990.unshift(headersM990);
+    var headersRM990 = ['Item Pai', 'Seq', 'REG', 'QTD_LIN_0']
+    RM990.unshift(headersRM990);
 
     //Salvar nas sheets
     var worksheetR0000 = XLSX.utils.aoa_to_sheet(R0000);
