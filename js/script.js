@@ -1094,7 +1094,7 @@ document.getElementById('lerArquivo').addEventListener('click', function () {
     RC381.unshift(headersRC381);
 
     var headersRC385 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'CST_COFINS', 'COD_ITEM', 'VL_ITEM', 'VL_BC_COFINS', 'ALIQ_COFINS', 'QUANT_BC_COFINS', 'ALIQ_COFINS_QUANT', 'VL_COFINS', 'COD_CTA']
-    RC385.unshift(headersC385);
+    RC385.unshift(headersRC385);
 
     var headersRC395 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'CST_COFINS', 'COD_MOD', 'COD_PART', 'SER', 'SUB_SER', 'NUM_DOC', 'DT_DOC', 'VL_DOC']
     RC395.unshift(headersRC395);
