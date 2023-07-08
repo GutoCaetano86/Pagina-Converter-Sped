@@ -171,3 +171,22 @@ buttonGeral.forEach((item)=>{
         }
     });
 });
+
+function atualizarLabelArquivo(input) {
+    var customFileUpload = input.parentNode;
+    if (input.files.length > 0) {
+      document.getElementById("labelArquivo").textContent = "Arquivo selecionado";
+      input.style.backgroundColor = "green";
+      customFileUpload.style.backgroundColor = "green";
+    } else {
+      document.getElementById("labelArquivo").textContent = "Selecionar arquivo";
+      input.style.backgroundColor = "";
+      customFileUpload.style.backgroundColor = "";  
+    }
+}
+
+function atualizarPagina() {
+    var lerArquivoButton = document.getElementById("lerArquivo");
+    lerArquivoButton.textContent = "Gerar Excel";
+    lerArquivoButton.style.backgroundColor = "blue";
+  }

@@ -929,7 +929,6 @@ document.getElementById('lerArquivo').addEventListener('click', function () {
       }
     });
 
-
     // Gerar o arquivo Excel
     var workbook = XLSX.utils.book_new();
 
@@ -1608,7 +1607,8 @@ document.getElementById('lerArquivo').addEventListener('click', function () {
     link.click();
 
     document.getElementById('lerArquivo').classList.remove('loading');
-    document.getElementById('lerArquivo').textContent = 'Ler Arquivo';
+    document.getElementById('lerArquivo').textContent = 'Arquivo Gerado';
+    document.getElementById('lerArquivo').style.backgroundColor = "green";
   }
 
   leitor.readAsText(file);

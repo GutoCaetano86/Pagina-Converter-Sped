@@ -296,10 +296,10 @@ main .sobre {
         display: none;
     }
 
-    .section-div {
-        background-image: url(img/pessoa\ ilustrativa.png);
-        background-repeat: no-repeat;
-        background-size: cover;
+    .section-div img {
+        width: 50%;
+        height: auto;
+        margin-bottom: 20px;
     }
 
     header {
@@ -332,6 +332,30 @@ main .sobre {
     }
 }
 
+
+@media (max-width: 992px) {
+    .section-div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .section-div img {
+      display: none;
+    }
+  
+    .section-div .custom-file-upload {
+      margin-top: 20px;
+      width: 100%;
+    }
+  
+    .section-div #lerArquivo {
+      width: 100%;
+      margin-top: 20px;
+    }
+}
+    
 
 @media(max-width: 992px) {
     .sobre img {
@@ -990,4 +1014,15 @@ footer .footer_comercial {
     to {
         transform: rotate(360deg);
     }
+}
+
+.section-div .custom-file-upload,
+.section-div #lerArquivo {
+  transition: background-color 0.3s, margin 0.3s;
+}
+
+.section-div .custom-file-upload:hover,
+.section-div #lerArquivo:hover {
+  background-color: green;
+  margin: 10px;
 }
