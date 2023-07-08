@@ -1015,6 +1015,57 @@ document.getElementById('lerArquivo').addEventListener('click', function () {
     var headersR0990 = ['Item Pai', 'Seq', 'REG', 'QTD_LIN_0'];
     R0990.unshift(headersR0990);
 
+    var headersA001 = ['Item Pai', 'Seq', 'REG', 'IND_MOV']
+    A001.unshift(headersA001);
+
+    var headersA010 = ['Item Pai', 'Seq', 'REG', 'CNPJ']
+    A010.unshift(headersA010);
+
+    var headersA100 = ['CNPJ', 'Item', 'Item Pai', 'Reg', 'IND_OPER', 'IND_EMIT', 'COD_PART', 'COD_SIT', 'SER', 'SUB SER', 'NUM_DOC', 'CHV_NFSE', 'DT_DOC', 'DT_EXE_SERV', 'VL_DOC', 'IND_PGTO', 'VL_DESC', 'VL_BC_PIS', 'VL_PIS', 'VL_BC_COFINS', 'VL_COFINS', 'VL_PIS_RET', 'VL_COFINS_RET', 'VL_ISS']
+    A100.unshift(headersA100);
+
+    var headersA110 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'REG', 'COD_INF', 'TXT_COMPL']
+    A110.unshift(headersA110);
+
+    var headersA111 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'REG', 'NUM_PROC', 'IND_PROC']
+    A111.unshift(headersA111);
+
+    var headersA120 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'REG', 'VL_TOT_SERV', 'VL_BC_PIS', 'VL_PIS_IMP', 'DT_PAG_PIS', 'VL_BC_COFINS', 'VL_COFINS_IMP', 'DT_PAG_COFINS', 'LOC_EXE_SERV']
+    A120.unshift(headersA120);
+
+    var headersA170 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'REG', 'NUM_ITEM', 'COD_ITEM', 'DESCR_COMPL', 'VL_ITEM', 'VL_DESC', 'NAT_BC_CRED', 'IND_ORIG_CRED', 'CST_PIS', 'VL_BC_PIS', 'ALIQ_PIS', 'VL_PIS', 'CST_COFINS', 'VL_BC_COFINS', 'ALIQ_COFINS', 'VL_COFINS', 'COD_CTA', 'COD_CCUS']
+    A170.unshift(headersA170);
+
+    var headersA990 = ['Item Pai', 'Seq', 'REG', 'QTD_LIN_0']
+    A990.unshift(headersA990);
+
+    var headersC001 = ['Item Pai', 'Seq', 'REG', 'IND_MOV']
+    C001.unshift(headersC001);
+
+    var headersC010 = ['Item Pai', 'Seq', 'REG', 'CNPJ', 'IND_ESCRI']
+    C010.unshift(headersC010);
+
+    var headersC100 = ['CNPJ', 'Item', 'Item Pai', 'Reg', 'IND_OPER', 'IND_EMIT', 'COD_PART', 'COD_MOD', 'COD_SIT', 'SER', 'NUM_DOC', 'CHV_NFE', 'DT_DOC', 'DT_E_S', 'VL_DOC', 'IND_PGTO', 'VL_DESC', 'VL_ABAT_NT', 'VL_MERC', 'IND_FRT', 'VL_FRT', 'VL_SEG', 'VL_OUT_DA', 'VL_BC_ICMS', 'VL_ICMS', 'VL_BC_ICMS_ST', 'VL_ICMS_ST', 'VL_IPI', 'VL_PIS', 'VL_COFINS', 'VL_PIS_ST', 'VL_COFINS_ST']
+    C100.unshift(headersC100);
+
+    var headersC110 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'REG', 'COD_INF', 'TXT_COMPL']
+    C110.unshift(headersC110);
+
+    var headersC111 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'REG', 'NUM_PROC', 'IND_PROC']
+    C111.unshift(headersC111);
+
+
+
+    
+
+
+
+
+    
+
+
+
+
 
     
 
