@@ -176,9 +176,9 @@ function atualizarLabelArquivo(input) {
     var file = input.files[0];
     var fileSizeInMB = file.size / (1024 * 1024); // Converter para megabytes
   
-    if (fileSizeInMB > 5) {
+    if (fileSizeInMB > 10) {
       // Arquivo excede o limite de tamanho
-      alert("O arquivo selecionado excede o limite de tamanho de 5 MB. Por favor, escolha um arquivo menor.");
+      alert("O arquivo selecionado excede o limite de tamanho de 10 MB. Por favor, para demonstração escolha um arquivo menor.");
       input.value = ""; // Limpar o valor do input para desfazer a seleção do arquivo
     }
 

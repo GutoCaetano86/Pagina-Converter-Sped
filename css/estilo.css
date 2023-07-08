@@ -21,7 +21,7 @@ body {
 
 header {
     background-color: #000;
-    padding: 10px;
+    padding: 8px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -39,7 +39,7 @@ header span {
 
 header .navegacao-primaria {
     display: flex;
-    gap: 30px;
+    gap: 20px;
     align-items: center;
 }
 
@@ -75,15 +75,15 @@ header .navegacao-primaria li a:hover::after {
     grid-template-columns: 1fr 1fr;
     justify-content: space-around;
     align-items: center;
-    gap: 60px;
-    padding: 60px;
+    gap: 100px;
+    padding: 50px;
 }
 
 .section-div div {
-    margin-top: 120px;
+    margin-top: 5px;
     align-self: start;
     display: grid;
-    gap: 30px;
+    gap: 20px;
 }
 
 .section-div div h2 {
