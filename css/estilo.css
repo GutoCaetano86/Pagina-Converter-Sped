@@ -1016,7 +1016,7 @@ footer .footer_comercial {
     }
 }
 
-.section-div .custom-file-upload,
+.section-div .produto
 .section-div #lerArquivo {
   transition: background-color 0.3s, margin 0.3s;
 }
@@ -1025,4 +1025,32 @@ footer .footer_comercial {
 .section-div #lerArquivo:hover {
   background-color: green;
   margin: 10px;
+}
+
+
+.produto {
+    margin: 30px 0;
+    grid-column: 1/-1;
+    text-align: center;
+    color: #fff;
+}
+
+.produto h1 {
+    font-size: 2.5rem;
+    color: #ff5d56;
+    margin-bottom: 15px;
+    font-family: 'Berkshire Swash', cursive;
+}
+
+.produto div {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.produto a {
+    font-size: 2.5rem;
+    color: #ff5d56;
+    margin-bottom: 15px;
+    font-family: 'Berkshire Swash', cursive;
 }

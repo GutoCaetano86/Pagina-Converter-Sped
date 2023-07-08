@@ -173,15 +173,26 @@ buttonGeral.forEach((item)=>{
 });
 
 function atualizarLabelArquivo(input) {
+    var file = input.files[0];
+    var fileSizeInMB = file.size / (1024 * 1024); // Converter para megabytes
+  
+    if (fileSizeInMB > 5) {
+      // Arquivo excede o limite de tamanho
+      alert("O arquivo selecionado excede o limite de tamanho de 5 MB. Por favor, escolha um arquivo menor.");
+      input.value = ""; // Limpar o valor do input para desfazer a seleção do arquivo
+    }
+
     var customFileUpload = input.parentNode;
     if (input.files.length > 0) {
       document.getElementById("labelArquivo").textContent = "Arquivo selecionado";
       input.style.backgroundColor = "green";
       customFileUpload.style.backgroundColor = "green";
+      lerArquivoButton.disabled = false;
     } else {
       document.getElementById("labelArquivo").textContent = "Selecionar arquivo";
       input.style.backgroundColor = "";
-      customFileUpload.style.backgroundColor = "";  
+      customFileUpload.style.backgroundColor = "";
+      lerArquivoButton.disabled = true;
     }
 }
 
