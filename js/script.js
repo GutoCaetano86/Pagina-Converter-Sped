@@ -1142,7 +1142,7 @@ document.getElementById('lerArquivo').addEventListener('click', function () {
     RD101.unshift(headersRD101);
 
     var headersRD105 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'Reg', 'IND_NAT_FRT', 'VL_ITEM', 'CST_COFINS', 'NAT_BC_CRED', 'VL_BC_COFINS', 'ALIQ_COFINS', 'VL_COFINS', 'COD_CTA']
-    RD105.unshift(headersD105);
+    RD105.unshift(headersRD105);
 
     var headersRD111 = ['CNPJ', 'Item Pai', 'NUM_DOC', 'COD_PART', 'Seq', 'Reg', 'NUM_PROC', 'IND_PROC']
     RD111.unshift(headersRD111);
@@ -1190,7 +1190,7 @@ document.getElementById('lerArquivo').addEventListener('click', function () {
     RF001.unshift(headersRF001);
 
     var headersRF010 = ['Item Pai', 'Seq', 'REG', 'CNPJ']
-    RF010.unshift(headersF010);
+    RF010.unshift(headersRF010);
 
     var headersRF100 = ['CNPJ', 'Item Pai', 'Seq', 'Reg', 'IND_OPER', 'COD_PART', 'COD_ITEM', 'DT_OPER', 'VL_OPER', 'CST_PIS', 'VL_BC_PIS', 'ALIQ_PIS', 'VL_PIS', 'CST_COFINS', 'VL_BC_COFINS', 'ALIQ_COFINS', 'VL_COFINS', 'NAT_BC_CRED', 'IND_ORIG_CRED', 'COD_CTA', 'COD_CCUS', 'DESC_DOC_OPER']
     RF100.unshift(headersRF100);
@@ -1262,7 +1262,7 @@ document.getElementById('lerArquivo').addEventListener('click', function () {
     RM350.unshift(headersRM350);
 
     var headersRM400 = ['Item Pai', 'Seq', 'REG', 'CST_PIS', 'VL_TOT_REC', 'COD_CTA', 'DESC_COMPL']
-    RM400.unshift(headersM400);
+    RM400.unshift(headersRM400);
 
     var headersRM410 = ['Item Pai', 'Seq', 'REG', 'NAT_REC', 'VL_REC', 'COD_CTA', 'DESC_COMPL']
     RM410.unshift(headersRM410);
@@ -1286,7 +1286,7 @@ document.getElementById('lerArquivo').addEventListener('click', function () {
     RM605.unshift(headersRM605);
 
     var headersRM610 = ['Item Pai', 'Seq', 'REG', 'COD_CONT', 'VL_REC_BRT', 'VL_BC_CONT', 'VL_AJUS_ACRES_BC_COFINS', 'VL_AJUS_REDUC_BC_COFINS', 'VL_BC_CONT_AJUS', 'ALIQ_COFINS_QUANT', 'QUANT_BC_COFINS', 'ALIQ_COFINS_QUANT', 'VL_CONT_APUR', 'VL_AJUS_ACRES', 'VL_AJUS_REDUC', 'VL_CONT_DIFER', 'VL_CONT_DIFER_ANT', 'VL_CONT_PER']
-    RM610.unshift(headersM610);
+    RM610.unshift(headersRM610);
 
     var headersRM611 = ['Item Pai', 'Seq', 'REG', 'IND_TIP_COOP', 'VL_BC_CONT_ANT_EXC_COOP', 'VL_EXC_COOP_GER', 'VL_EXC_ESP_COOP', 'VL_BC_CONT']
     RM611.unshift(headersRM611);
