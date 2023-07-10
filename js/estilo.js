@@ -187,12 +187,12 @@ function atualizarLabelArquivo(input) {
       document.getElementById("labelArquivo").textContent = "Arquivo selecionado";
       input.style.backgroundColor = "green";
       customFileUpload.style.backgroundColor = "green";
-      lerArquivoButton.disabled = false;
+      //lerArquivoButton.disabled = false;
     } else {
       document.getElementById("labelArquivo").textContent = "Selecionar arquivo";
       input.style.backgroundColor = "";
       customFileUpload.style.backgroundColor = "";
-      lerArquivoButton.disabled = true;
+      //lerArquivoButton.disabled = true;
     }
 }
 
