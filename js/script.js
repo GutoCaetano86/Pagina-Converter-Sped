@@ -1380,13 +1380,12 @@ document.getElementById('lerArquivo').addEventListener('click', function () {
     XLSX.utils.book_append_sheet(workbook, worksheetRA110, 'RA110');
     var worksheetRA111 = XLSX.utils.aoa_to_sheet(RA111);
     XLSX.utils.book_append_sheet(workbook, worksheetRA111, 'RA111');
-    var worksheetRA170 = XLSX.utils.aoa_to_sheet(RA170);
-    XLSX.utils.book_append_sheet(workbook, worksheetRA170, 'RA170');
     var worksheetRA120 = XLSX.utils.aoa_to_sheet(RA120);
     XLSX.utils.book_append_sheet(workbook, worksheetRA120, 'RA120');
+    var worksheetRA170 = XLSX.utils.aoa_to_sheet(RA170);
+    XLSX.utils.book_append_sheet(workbook, worksheetRA170, 'RA170');
     var worksheetRA990 = XLSX.utils.aoa_to_sheet(RA990);
     XLSX.utils.book_append_sheet(workbook, worksheetRA990, 'RA990');
-    
     
     var worksheetRC001 = XLSX.utils.aoa_to_sheet(RC001);
     XLSX.utils.book_append_sheet(workbook, worksheetRC001, 'RC001');
@@ -1403,11 +1402,11 @@ document.getElementById('lerArquivo').addEventListener('click', function () {
     var worksheetRC170 = XLSX.utils.aoa_to_sheet(RC170);
     XLSX.utils.book_append_sheet(workbook, worksheetRC170, 'RC170');
     var worksheetRC175 = XLSX.utils.aoa_to_sheet(RC175);
-    XLSX.utils.book_append_sheet(workbook, worksheetRC175, 'RC175');    
-    var worksheetRC181 = XLSX.utils.aoa_to_sheet(RC181);
-    XLSX.utils.book_append_sheet(workbook, worksheetRC181, 'RC181');
+    XLSX.utils.book_append_sheet(workbook, worksheetRC175, 'RC175');
     var worksheetRC180 = XLSX.utils.aoa_to_sheet(RC180);
     XLSX.utils.book_append_sheet(workbook, worksheetRC180, 'RC180');
+    var worksheetRC181 = XLSX.utils.aoa_to_sheet(RC181);
+    XLSX.utils.book_append_sheet(workbook, worksheetRC181, 'RC181');
     var worksheetRC185 = XLSX.utils.aoa_to_sheet(RC185);
     XLSX.utils.book_append_sheet(workbook, worksheetRC185, 'RC185');    
     var worksheetRC188 = XLSX.utils.aoa_to_sheet(RC188);
@@ -1455,10 +1454,10 @@ document.getElementById('lerArquivo').addEventListener('click', function () {
     XLSX.utils.book_append_sheet(workbook, worksheetRD101, 'RD101');
     var worksheetRD010 = XLSX.utils.aoa_to_sheet(RD010);
     XLSX.utils.book_append_sheet(workbook, worksheetRD010, 'RD010');
-    var worksheetRD105 = XLSX.utils.aoa_to_sheet(RD105);
-    XLSX.utils.book_append_sheet(workbook, worksheetRD105, 'RD105');
     var worksheetRD100 = XLSX.utils.aoa_to_sheet(RD100);
     XLSX.utils.book_append_sheet(workbook, worksheetRD100, 'RD100');
+    var worksheetRD105 = XLSX.utils.aoa_to_sheet(RD105);
+    XLSX.utils.book_append_sheet(workbook, worksheetRD105, 'RD105');
     var worksheetRD111 = XLSX.utils.aoa_to_sheet(RD111);
     XLSX.utils.book_append_sheet(workbook, worksheetRD111, 'RD111');
     var worksheetRD200 = XLSX.utils.aoa_to_sheet(RD200);
@@ -1535,7 +1534,6 @@ document.getElementById('lerArquivo').addEventListener('click', function () {
     XLSX.utils.book_append_sheet(workbook, worksheetRM225, 'RM225');
     var worksheetRM230 = XLSX.utils.aoa_to_sheet(RM230);
     XLSX.utils.book_append_sheet(workbook, worksheetRM230, 'RM230');
-    
     var worksheetRM300 = XLSX.utils.aoa_to_sheet(RM300);
     XLSX.utils.book_append_sheet(workbook, worksheetRM300, 'RM300');
     var worksheetRM350 = XLSX.utils.aoa_to_sheet(RM350);
