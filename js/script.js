@@ -6,6 +6,11 @@ document.getElementById('lerArquivo').addEventListener('click', function () {
   const file = input.files[0];
   const leitor = new FileReader();
 
+  if (file === undefined) {
+    alert("Selecione um arquivo antes.");
+    exit();
+  } 
+
   document.getElementById('lerArquivo').textContent = 'Processando Planilha';
   document.getElementById('lerArquivo').classList.add('loading');
 
@@ -1614,7 +1619,8 @@ document.getElementById('lerArquivo').addEventListener('click', function () {
     document.getElementById('lerArquivo').style.backgroundColor = "green";
   }
 
-  leitor.readAsText(file);
+      leitor.readAsText(file);
+
 });
 
 function s2ab(s) {
@@ -1625,5 +1631,3 @@ function s2ab(s) {
   }
   return buf;
 }
-
-
