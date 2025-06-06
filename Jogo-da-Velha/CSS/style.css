@@ -157,3 +157,14 @@ main.end{
 .game-end-message.show{
     display: flex;    
 }
+
+
+.produto {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.hotmart__button-checkout {
+    display: inline-block;
+}
+
