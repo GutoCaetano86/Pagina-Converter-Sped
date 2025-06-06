@@ -60,7 +60,7 @@ main.end{
 
 .cell.x::before,
 .cell.x::after{
-    background-color: white;
+    background-color: crimson;
 }
 
 .board.x .cell:not(.x):not(.o):hover::before,
@@ -91,7 +91,7 @@ main.end{
 
 .cell.o::before,
 .cell.o::after{
-    background-color: white;
+    background-color: deepskyblue;
 }
 
 .board.o .cell:not(.x):not(.o):hover::before,
