@@ -1,170 +1,231 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-*{
+:root {
+    --cell-size: 100px;
+    --background: #202124;
+    --font-color: #ffffff;
+    --x-color: #ea4335;
+    --o-color: #4285f4;
+    --ui-bg: #3c4043;
+    --ui-hover: #4a4e52;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
-    --background: #202124;
-    --cell-size: 100px;
-    --mark-size: calc(var(--cell-size) * 0.9)
-}
-
-body{
-    background: var(--background);
-}
-
-header{
-    text-align: center;
-    color: white;
-    font: 400 12pt "Roboto", sans-serif;
-    margin: 64px 0 64px 0;
-}
-
-main.end{
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
-}
-
-.board{
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    grid-template-columns: repeat(3, auto);
-}
-
-.cell{
-    width: var(--cell-size);
-    height: var(--cell-size);
-
+body {
+    background-color: var(--background);
+    color: var(--font-color);
+    font-family: 'Roboto', sans-serif;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.hide {
+    display: none !important;
+}
+
+/* --- Tela de Seleção de Modo --- */
+#mode-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#mode-selection h1 {
+    font-size: 3rem;
+}
+
+.mode-button {
+    font-size: 1.5rem;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--ui-bg);
+    color: var(--font-color);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.mode-button:hover {
+    background-color: var(--ui-hover);
+    transform: scale(1.03);
+}
+
+/* --- Container do Jogo --- */
+#game-container main {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    
-    border: 1px white solid;
-    border-top: none;
-    border-right: none;
-    position: relative;
+}
+
+#game-container header {
+    margin-bottom: 40px;
+}
+
+#game-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+main.end {
+    filter: blur(5px);
+    pointer-events: none;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, var(--cell-size));
+    grid-template-rows: repeat(3, var(--cell-size));
+    gap: 10px;
+}
+
+.cell {
+    width: var(--cell-size);
+    height: var(--cell-size);
+    background-color: var(--ui-bg);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    position: relative; 
 }
 
-.cell:nth-child(3n + 1){
-    border-left: none;
-}
-
-.cell:nth-child(n + 7){
-    border-bottom: none;
-}
-
-.cell.x::before,
-.cell.x::after{
-    background-color: crimson;
-}
-
+/* Efeito de Hover */
 .board.x .cell:not(.x):not(.o):hover::before,
-.board.x .cell:not(.x):not(.o):hover::after,
-.board.o .cell:not(.x):not(.o):hover::before{
-    background-color: rgb(56, 61, 61);
-}
-
-.board.x .cell:not(.x):not(.o):hover::before,
-.board.x .cell:not(.x):not(.o):hover::after,
-.cell.x::before,
-.cell.x::after{
-    content: "";
-    width: calc(var(--mark-size) * 0.15);
-    height:  var(--mark-size);
+.board.x .cell:not(.x):not(.o):hover::after {
+    content: '';
     position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 15px;
+    height: 90%;
+    background-color: var(--ui-hover);
+    border-radius: 8px;
 }
+.board.x .cell:not(.x):not(.o):hover::before { transform: translate(-50%, -50%) rotate(45deg); }
+.board.x .cell:not(.x):not(.o):hover::after { transform: translate(-50%, -50%) rotate(-45deg); }
 
-.board.x .cell:not(.x):not(.o):hover::before,
-.cell.x::before{
-    transform: rotate(45deg);
-}
-
-.board.x .cell:not(.x):not(.o):hover::after,
-.cell.x::after{
-    transform: rotate(-45deg);
-}
-
-.cell.o::before,
-.cell.o::after{
-    background-color: deepskyblue;
-}
-
-.board.o .cell:not(.x):not(.o):hover::before,
-.board.o .cell:not(.x):not(.o):hover::after,
-.cell.o::before,
-.cell.o::after{
-    content: "";
+.board.o .cell:not(.x):not(.o):hover::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    border: 10px solid var(--ui-hover);
     border-radius: 50%;
+}
+
+/* Marcas X e O */
+.cell.x::before, .cell.x::after {
+    content: '';
     position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 15px;
+    height: 90%;
+    background-color: var(--x-color);
+    border-radius: 8px;
+}
+.cell.x::before { transform: translate(-50%, -50%) rotate(45deg); }
+.cell.x::after { transform: translate(-50%, -50%) rotate(-45deg); }
+
+.cell.o::before, .cell.o::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
 }
 
-.board.o .cell:not(.x):not(.o):hover::before,
-.cell.o::before{
-    width: calc(var(--mark-size) * 0.9);
-    height: calc(var(--mark-size) * 0.9);
+.cell.o::before {
+    width: 75px;
+    height: 75px;
+    background-color: var(--o-color);
+}
+.cell.o::after {
+    width: 45px;
+    height: 45px;
+    background-color: var(--ui-bg);
 }
 
-.board.o .cell:not(.x):not(.o):hover::after,
-.cell.o::after{
-    width: calc(var(--mark-size) * 0.6);
-    height: calc(var(--mark-size) * 0.6);
-    background-color: var(--background);
-}
-
-.cell.x,
-.cell.o { 
+.cell.x, .cell.o {
     cursor: not-allowed;
 }
 
-.game-end-message{
-    position: fixed;
-
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-    background-color: rgba(255, 255, 255, 0.8);
-
+/* Mensagem de Fim de Jogo */
+.game-end-message {
     display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-
-    font: 400 24pt "Roboto", sans-serif;
-}
-
-.game-end-message button{
-    font-size: 14pt;
-    background-color: var(--background);
-    border: 1px solid white;
     color: white;
-    padding: 8px;
-    border-radius: 15px;
-    margin: 8px;
+    font-size: 3rem;
+    gap: 20px;
+}
+
+.game-end-message.show {
+    display: flex;
+}
+
+.end-game-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.end-game-buttons button {
+    font-size: 1.2rem;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
     cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
-.game-end-message button:hover{
-    filter: brightness(130%);
+#in-game-controls {
+    margin-top: 40px;
+    display: flex;
+    gap: 15px;
 }
 
-.game-end-message.show{
-    display: flex;    
+#in-game-controls button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 2px solid var(--ui-bg);
+    background-color: transparent;
+    color: var(--font-color);
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
-
-.produto {
-    text-align: center;
-    margin-top: 30px;
+#in-game-controls button:hover {
+    background-color: var(--ui-bg);
+    border-color: var(--ui-hover);
 }
 
-.hotmart__button-checkout {
-    display: inline-block;
-}
+#restartButton { background-color: var(--o-color); }
+#restartButton:hover { background-color: #63a0ff; transform: scale(1.05); }
 
+#changeModeButton { background-color: var(--x-color); }
+#changeModeButton:hover { background-color: #f06a5e; transform: scale(1.05); }

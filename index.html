@@ -17,7 +17,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogo da Velha</title>
+    <title>Jogo da Velha - Múltiplos Modos</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js" integrity="sha512-r22gChDnGvBylk90+2e/ycr3RVrDi8DIOkIGNhJlKfuyQM4tIRAI062MaV8sfjQKYVGjOBaZBOA87z+IhZE9DA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="./Jogo-da-Velha/CSS/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -26,31 +26,47 @@
     <link rel="icon" type="image/ico sizes="16x16" href="imagens/favicon.ico">
 </head>
 <body>
-    <main class="">
-        <header>
-            <h1>Jogo da Velha</h1>
-            <p>Quem ganha? X ou O?</p>
-        </header>
-        <div class="board" id="board">
-            <div class="cell x"></div>
-            <div class="cell o"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-        </div>
-    </main>
-    <div class="game-end-message" id="gameEndElement">
-        <div data-game-end-message>O X venceu</div>
-        <button id="restartbutton">Reiniciar</button>
+    
+    
+    <div id="mode-selection">
+        <h1>Jogo da Velha</h1>
+        <button class="mode-button" id="pvcButton">Jogador vs. Computador</button>
+        <button class="mode-button" id="pvpButton">Jogador vs. Jogador</button>
     </div>
+
+    <div id="game-container" class="hide">
+        <main>
+            <header>
+                <h1 id="game-title">Jogo da Velha</h1>
+                <p id="game-subtitle">Sua vez!</p>
+            </header>
+            <div class="board" id="board"></div>
+        </main>
+    </div>
+    
+    <div class="game-end-message" id="gameEndElement">
+        <div data-game-end-message></div>
+        <div class="end-game-buttons">
+            <button id="restartButton">Jogar de Novo</button>
+            <button id="changeModeButton">Mudar Modo</button>
+        </div>
+    </div>
+    
+     <div id="in-game-controls">
+            <button id="inGameRestartButton">Reiniciar Partida</button>
+            <button id="inGameChangeModeButton">Voltar ao Menu</button>
+        </div>
+       
+        <br>
+        <br>
+
     <script src="./Jogo-da-Velha/JS/script.js"></script>
         <div class="produto">
         <br>
         <br>
+
+
+
 	<script type="text/javascript">
             function importHotmart(){ 
                  var imported = document.createElement('script'); 
