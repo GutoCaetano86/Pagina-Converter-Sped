@@ -8,84 +8,93 @@ const WINNING_COMBINATIONS = [
 
 // --- Elementos da UI ---
 const modeSelectionElement = document.getElementById('mode-selection');
-const pvcButton = document.getElementById('pvcButton');
-const pvpButton = document.getElementById('pvpButton');
+const step1Element = document.getElementById('step1');
+const step2Element = document.getElementById('step2');
+const backButton = document.getElementById('backButton');
+const chosenModeText = document.getElementById('chosen-mode-text');
+
 const gameContainerElement = document.getElementById('game-container');
 const boardElement = document.getElementById('board');
 const mainElement = document.querySelector('main');
 const gameEndElement = document.getElementById('gameEndElement');
 const gameEndMessageText = document.querySelector('[data-game-end-message]');
-const restartButton = document.getElementById('restartButton'); // Botão no modal de fim de jogo
-const changeModeButton = document.getElementById('changeModeButton'); // Botão no modal de fim de jogo
+const restartButton = document.getElementById('restartButton');
+const changeModeButton = document.getElementById('changeModeButton');
 const gameTitle = document.getElementById('game-title');
 const gameSubtitle = document.getElementById('game-subtitle');
-
-// Controles Durante o Jogo
 const inGameControls = document.getElementById('in-game-controls');
 const inGameRestartButton = document.getElementById('inGameRestartButton');
 const inGameChangeModeButton = document.getElementById('inGameChangeModeButton');
 
-let gameMode; // 'pvc' ou 'pvp'
+let gameModeType; // 'classic' ou 'infinite'
+let opponentType; // 'pvc' ou 'pvp'
 let isPlayerXTurn;
 let cells = [];
+let moveHistory = [];
 
-// --- INICIALIZAÇÃO ---
-
-// Garante que os controles do jogo comecem escondidos
+// --- INICIALIZAÇÃO E SELEÇÃO DE MODO ---
 inGameControls.classList.add('hide');
 
-// Seleção de Modo
-pvcButton.addEventListener('click', () => initGame('pvc'));
-pvpButton.addEventListener('click', () => initGame('pvp'));
+step1Element.querySelectorAll('.mode-button').forEach(button => {
+    button.addEventListener('click', () => {
+        gameModeType = button.dataset.modeType;
+        chosenModeText.innerText = button.innerText;
+        step1Element.classList.add('hide');
+        step2Element.classList.remove('hide');
+    });
+});
 
-// Controles de Fim de Jogo
+step2Element.querySelectorAll('.mode-button').forEach(button => {
+    button.addEventListener('click', () => {
+        opponentType = button.dataset.opponent;
+        initGame();
+    });
+});
+
+backButton.addEventListener('click', () => {
+    step2Element.classList.add('hide');
+    step1Element.classList.remove('hide');
+});
+
 changeModeButton.addEventListener('click', showModeSelection);
 restartButton.addEventListener('click', startGame);
-
-// Controles Durante o Jogo
 inGameRestartButton.addEventListener('click', startGame);
 inGameChangeModeButton.addEventListener('click', showModeSelection);
 
-/**
- * Esconde a seleção de modo e inicia o jogo.
- * @param {string} mode - O modo de jogo selecionado ('pvc' ou 'pvp').
- */
-function initGame(mode) {
-    gameMode = mode;
+function initGame() {
     modeSelectionElement.classList.add('hide');
     gameContainerElement.classList.remove('hide');
-    inGameControls.classList.remove('hide'); // Mostra os controles durante o jogo
+    inGameControls.classList.remove('hide');
     startGame();
 }
 
-/**
- * Volta para a tela de seleção de modo.
- */
 function showModeSelection() {
     gameContainerElement.classList.add('hide');
-    inGameControls.classList.add('hide'); // Esconde os controles durante o jogo
+    inGameControls.classList.add('hide');
     gameEndElement.classList.remove('show');
     mainElement.classList.remove('end');
+    step2Element.classList.add('hide');
+    step1Element.classList.remove('hide');
     modeSelectionElement.classList.remove('hide');
 }
 
-/**
- * Prepara o tabuleiro para uma nova partida.
- */
 function startGame() {
     isPlayerXTurn = true;
+    moveHistory = [];
     gameEndElement.classList.remove('show');
     mainElement.classList.remove('end');
     boardElement.className = 'board x';
 
-    if (gameMode === 'pvc') {
-        gameTitle.innerText = 'Jogador vs. Computador';
-        gameSubtitle.innerText = 'Você é o X. Boa sorte!';
+    // Definir Títulos
+    if (gameModeType === 'classic') {
+        gameTitle.innerText = 'Jogo da Velha Clássico';
+        gameSubtitle.innerText = opponentType === 'pvc' ? 'Você é o X. Boa sorte!' : 'É a vez do X';
     } else {
-        gameTitle.innerText = 'Jogador vs. Jogador';
-        gameSubtitle.innerText = "É a vez do X";
+        gameTitle.innerText = 'Jogo da Velha Infinito';
+        gameSubtitle.innerText = opponentType === 'pvc' ? 'Você é o X. O jogo nunca empata!' : 'É a vez do X. O jogo nunca empata!';
     }
     
+    // Criar Tabuleiro
     boardElement.innerHTML = '';
     cells = [];
     for (let i = 0; i < 9; i++) {
@@ -98,55 +107,93 @@ function startGame() {
     }
 }
 
-/**
- * Lida com o clique do jogador.
- * @param {Event} e - O evento de clique.
- */
 function handlePlayerClick(e) {
     const cell = e.target;
-    if(cell.classList.contains(PLAYER_X_CLASS) || cell.classList.contains(PLAYER_O_CLASS)) {
+    if (cell.classList.contains(PLAYER_X_CLASS) || cell.classList.contains(PLAYER_O_CLASS)) {
         return;
     }
     
     const currentClass = isPlayerXTurn ? PLAYER_X_CLASS : PLAYER_O_CLASS;
     
     placeMark(cell, currentClass);
-    if (checkWin(currentClass)) return endGame(false, currentClass);
-    if (isDraw()) return endGame(true);
+    if (gameModeType === 'infinite') {
+        moveHistory.push(cell);
+    }
 
-    if (gameMode === 'pvc') {
-        boardElement.classList.remove(PLAYER_X_CLASS);
+    if (checkWin(currentClass)) {
+        return endGame(false, currentClass);
+    }
+    
+    if (isDraw()) {
+        if (gameModeType === 'infinite') {
+            handleInfiniteDraw();
+        } else {
+            return endGame(true);
+        }
+    }
+
+    // Lógica de Oponente
+    if (opponentType === 'pvc' && isPlayerXTurn) {
+        // A jogada do jogador X acabou de acontecer, agora é a vez do computador
+        swapTurns(); // Passa o turno visualmente para o O, mas a lógica da jogada do computador vem a seguir
         boardElement.style.pointerEvents = 'none';
         setTimeout(() => {
             computerMove();
             boardElement.style.pointerEvents = 'auto';
-        }, 500);
+        }, 600);
     } else {
         swapTurns();
     }
 }
 
-/**
- * Executa a jogada do computador.
- */
+
+function handleInfiniteDraw() {
+    const oldestCell = moveHistory.shift();
+    if (!oldestCell) return;
+
+    oldestCell.classList.remove(PLAYER_X_CLASS, PLAYER_O_CLASS);
+    oldestCell.addEventListener('click', handlePlayerClick, { once: true });
+
+    oldestCell.classList.add('removed');
+    setTimeout(() => {
+        oldestCell.classList.remove('removed');
+    }, 700);
+}
+
 function computerMove() {
     const bestMoveIndex = findBestMove();
     if (bestMoveIndex === -1) return;
+    
     const cell = cells[bestMoveIndex];
     placeMark(cell, PLAYER_O_CLASS);
+    
+    if (gameModeType === 'infinite') {
+        moveHistory.push(cell);
+    }
+
     if (checkWin(PLAYER_O_CLASS)) return endGame(false, PLAYER_O_CLASS);
-    if (isDraw()) return endGame(true);
-    boardElement.classList.add(PLAYER_X_CLASS);
+    
+    if (isDraw() && gameModeType === 'infinite') {
+        handleInfiniteDraw();
+    }
+    
+    swapTurns(); // Devolve o turno para o jogador
 }
 
-/**
- * Troca o turno entre X e O no modo PvP.
- */
 function swapTurns() {
     isPlayerXTurn = !isPlayerXTurn;
-    boardElement.classList.toggle(PLAYER_X_CLASS, isPlayerXTurn);
-    boardElement.classList.toggle(PLAYER_O_CLASS, !isPlayerXTurn);
-    gameSubtitle.innerText = `É a vez do ${isPlayerXTurn ? 'X' : 'O'}`;
+    boardElement.classList.toggle('x', isPlayerXTurn);
+    boardElement.classList.toggle('o', !isPlayerXTurn);
+    const nextPlayer = isPlayerXTurn ? 'X' : 'O';
+    
+    // Atualiza a legenda apenas quando for a vez de um jogador humano
+    if (opponentType === 'pvp' || (opponentType === 'pvc' && isPlayerXTurn)) {
+        if(gameModeType === 'infinite'){
+            gameSubtitle.innerText = `O jogo nunca empata. É a vez do ${nextPlayer}!`;
+        } else {
+            gameSubtitle.innerText = `É a vez do ${nextPlayer}`;
+        }
+    }
 }
 
 function placeMark(cell, classToPlace) {
@@ -159,18 +206,20 @@ function checkWin(currentClass) {
 }
 
 function isDraw() {
-    return [...cells].every(cell => cell.classList.contains(PLAYER_X_CLASS) || cell.classList.contains(PLAYER_O_CLASS));
+    return cells.every(cell => cell.classList.contains(PLAYER_X_CLASS) || cell.classList.contains(PLAYER_O_CLASS));
 }
 
 function endGame(draw, winnerClass) {
     if (draw) {
         gameEndMessageText.innerText = 'Empate!';
     } else {
-        if(gameMode === 'pvc') {
-            gameEndMessageText.innerText = `${winnerClass === PLAYER_X_CLASS ? 'Você' : 'O Computador'} Venceu!`;
+        let winnerName;
+        if (opponentType === 'pvc') {
+            winnerName = winnerClass === PLAYER_X_CLASS ? 'Você' : 'O Computador';
         } else {
-            gameEndMessageText.innerText = `O jogador '${winnerClass.toUpperCase()}' Venceu!`;
+            winnerName = `O jogador '${winnerClass.toUpperCase()}'`;
         }
+        gameEndMessageText.innerText = `${winnerName} Venceu!`;
     }
     mainElement.classList.add('end');
     gameEndElement.classList.add('show');
@@ -179,15 +228,24 @@ function endGame(draw, winnerClass) {
 function findBestMove() {
     const availableCells = cells.filter(c => !c.classList.contains(PLAYER_X_CLASS) && !c.classList.contains(PLAYER_O_CLASS));
     
-    for (const player of [PLAYER_O_CLASS, PLAYER_X_CLASS]) {
-        for (let cell of availableCells) {
-            cell.classList.add(player);
-            if (checkWin(player)) {
-                cell.classList.remove(player);
-                return parseInt(cell.dataset.index);
-            }
-            cell.classList.remove(player);
+    // 1. Tenta vencer
+    for (let cell of availableCells) {
+        cell.classList.add(PLAYER_O_CLASS);
+        if (checkWin(PLAYER_O_CLASS)) {
+            cell.classList.remove(PLAYER_O_CLASS);
+            return parseInt(cell.dataset.index);
         }
+        cell.classList.remove(PLAYER_O_CLASS);
+    }
+
+    // 2. Tenta bloquear o jogador
+    for (let cell of availableCells) {
+        cell.classList.add(PLAYER_X_CLASS);
+        if (checkWin(PLAYER_X_CLASS)) {
+            cell.classList.remove(PLAYER_X_CLASS);
+            return parseInt(cell.dataset.index);
+        }
+        cell.classList.remove(PLAYER_X_CLASS);
     }
     
     const center = 4;

@@ -27,11 +27,21 @@
 </head>
 <body>
     
-    
-    <div id="mode-selection">
-        <h1>Jogo da Velha</h1>
-        <button class="mode-button" id="pvcButton">Jogador vs. Computador</button>
-        <button class="mode-button" id="pvpButton">Jogador vs. Jogador</button>
+        <div id="mode-selection">
+        <div class="selection-step" id="step1">
+            <h1>Jogo da Velha</h1>
+            <p class="step-title">1. Escolha a modalidade:</p>
+            <button class="mode-button" data-mode-type="classic">Clássico</button>
+            <button class="mode-button" data-mode-type="infinite">Infinito</button>
+        </div>
+
+        <div class="selection-step hide" id="step2">
+            <h1><span id="chosen-mode-text"></span></h1>
+            <p class="step-title">2. Escolha o oponente:</p>
+            <button class="mode-button" data-opponent="pvc">vs. Computador</button>
+            <button class="mode-button" data-opponent="pvp">vs. Jogador</button>
+            <button class="back-button" id="backButton">Voltar</button>
+        </div>
     </div>
 
     <div id="game-container" class="hide">
@@ -42,6 +52,11 @@
             </header>
             <div class="board" id="board"></div>
         </main>
+        
+        <div id="in-game-controls" class="hide">
+            <button id="inGameRestartButton">Reiniciar Partida</button>
+            <button id="inGameChangeModeButton">Voltar ao Menu</button>
+        </div>
     </div>
     
     <div class="game-end-message" id="gameEndElement">
@@ -52,11 +67,6 @@
         </div>
     </div>
     
-     <div id="in-game-controls">
-            <button id="inGameRestartButton">Reiniciar Partida</button>
-            <button id="inGameChangeModeButton">Voltar ao Menu</button>
-        </div>
-       
         <br>
         <br>
 
@@ -64,9 +74,6 @@
         <div class="produto">
         <br>
         <br>
-
-
-
 	<script type="text/javascript">
             function importHotmart(){ 
                  var imported = document.createElement('script'); 

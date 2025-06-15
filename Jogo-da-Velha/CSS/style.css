@@ -8,6 +8,7 @@
     --o-color: #4285f4;
     --ui-bg: #3c4043;
     --ui-hover: #4a4e52;
+    --highlight-color: #fbbc05;
 }
 
 * {
@@ -26,6 +27,7 @@ body {
     align-items: center;
     min-height: 100vh;
     text-align: center;
+    padding: 20px;
 }
 
 .hide {
@@ -38,15 +40,32 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    width: 100%;
 }
 
-#mode-selection h1 {
+.selection-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.selection-step h1 {
     font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.step-title {
+    font-size: 1.2rem;
+    color: #bdc1c6;
+    margin-bottom: 10px;
 }
 
 .mode-button {
     font-size: 1.5rem;
-    width: 300px;
+    width: 350px;
+    max-width: 90vw;
     padding: 20px;
     border-radius: 10px;
     border: none;
@@ -61,7 +80,30 @@ body {
     transform: scale(1.03);
 }
 
+.back-button {
+    font-size: 1rem;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: transparent;
+    border: 2px solid var(--ui-bg);
+    color: var(--font-color);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.back-button:hover {
+    background-color: var(--ui-bg);
+}
+
+
 /* --- Container do Jogo --- */
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #game-container main {
     display: flex;
     flex-direction: column;
@@ -169,7 +211,30 @@ main.end {
     cursor: not-allowed;
 }
 
-/* Mensagem de Fim de Jogo */
+/* --- Controles Durante o Jogo --- */
+#in-game-controls {
+    margin-top: 40px;
+    display: flex;
+    gap: 15px;
+}
+
+#in-game-controls button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 2px solid var(--ui-bg);
+    background-color: transparent;
+    color: var(--font-color);
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+#in-game-controls button:hover {
+    background-color: var(--ui-bg);
+    border-color: var(--ui-hover);
+}
+
+/* --- Mensagem de Fim de Jogo --- */
 .game-end-message {
     display: none;
     position: fixed;
@@ -202,30 +267,18 @@ main.end {
     transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
-#in-game-controls {
-    margin-top: 40px;
-    display: flex;
-    gap: 15px;
-}
-
-#in-game-controls button {
-    font-size: 1rem;
-    padding: 10px 20px;
-    border-radius: 8px;
-    border: 2px solid var(--ui-bg);
-    background-color: transparent;
-    color: var(--font-color);
-    cursor: pointer;
-    transition: background-color 0.2s ease, border-color 0.2s ease;
-}
-
-#in-game-controls button:hover {
-    background-color: var(--ui-bg);
-    border-color: var(--ui-hover);
-}
-
 #restartButton { background-color: var(--o-color); }
 #restartButton:hover { background-color: #63a0ff; transform: scale(1.05); }
 
 #changeModeButton { background-color: var(--x-color); }
 #changeModeButton:hover { background-color: #f06a5e; transform: scale(1.05); }
+
+/* Animação para peça removida */
+@keyframes fadeOut {
+    from { background-color: var(--highlight-color); }
+    to { background-color: var(--ui-bg); }
+}
+
+.cell.removed {
+    animation: fadeOut 0.7s ease-in-out;
+}
